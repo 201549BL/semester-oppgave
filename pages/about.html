@@ -7,56 +7,58 @@
     <title>Semester oppgave</title>
 
     <link rel="stylesheet" href="../style.css" />
+    <script defer src="../main.js"></script>
   </head>
   <body class="body">
     <!-- header -->
     <header class="body__header">
       <div class="header__container">
-        <input
-          type="checkbox"
-          class="hamburger__checkbox"
-          id="hamburger-menu"
-        />
         <!-- logo  -->
         <h3 class="logo">
           <a href="/"> Gruppe 2 </a>
         </h3>
 
         <!-- hamburger menu  -->
-        <label for="hamburger-menu" class="hamburger__menu menu__open"
-          ><img src="../public/menu.png" alt="menu open icon" height="32px"
-        /></label>
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <svg width="32" height="32" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"
+            />
+          </svg>
+        </button>
 
         <!-- navigation  -->
-        <nav class="nav">
-          <label for="hamburger-menu" class="hamburger__menu menu__close">
-            <img
-              src="../public/close.png"
-              alt="menu close icon"
-              height="32px"
-            />
-          </label>
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <!-- <img src="public/close.png" alt="menu close icon" height="32" /> -->
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6Z"
+              />
+            </svg>
+          </button>
+
           <ul class="nav__links">
             <li class="nav__link">
-              <a href="/" class="button button--pink button--center">Hjem</a>
+              <a href="/" class="button button--pink">Hjem</a>
             </li>
 
             <li class="nav__link">
-              <a
-                href="./pages/about.html "
-                class="button button--pink button--center"
-              >
+              <a href="/pages/about.html" class="button button--pink">
                 Om oss
               </a>
             </li>
 
             <li class="nav__link">
-              <a
-                href="./pages/sources.html"
-                class="button button--pink button--center"
+              <a href="/pages/sources.html" class="button button--pink"
+                >Kilder</a
               >
-                Kilder
-              </a>
             </li>
           </ul>
         </nav>
@@ -66,7 +68,7 @@
     <!-- main -->
     <main class="body__main body-background-secondary">
       <div class="main__container main__container--about">
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/profil.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--blue"></div> -->
@@ -76,7 +78,7 @@
             <h3>Eirik Bjørndal</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/espen.jpg" alt="" />
             <!-- <div class="color-overlay color-overlay--green"></div> -->
@@ -85,7 +87,7 @@
             <h3>Espen</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/fake-face-1.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--pink"></div> -->
@@ -94,7 +96,7 @@
             <h3>Jack</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/fake-face-2.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--blue"></div> -->
@@ -103,7 +105,7 @@
             <h3>Joakim</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/fake-face-3.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--green"></div> -->
@@ -112,7 +114,7 @@
             <h3>Vendela</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/fake-face-6.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--pink"></div> -->
@@ -121,7 +123,7 @@
             <h3>Jenny</h3>
           </div>
         </div>
-        <div class="about__person">
+        <div class="about__person preload">
           <div class="person__portrait">
             <img src="/public/fake-face-5.jpeg" alt="" />
             <!-- <div class="color-overlay color-overlay--blue"></div> -->
