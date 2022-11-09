@@ -11,6 +11,9 @@ navButtons.forEach((btn) =>
 // preload script
 const preloadedElements = document.querySelectorAll(".preload");
 const onLoaded = (e) => {
-  preloadedElements.forEach((el) => el.classList.remove("preload"));
+  setTimeout(
+    () => preloadedElements.forEach((el) => el.classList.remove("preload")),
+    50
+  );
 };
 document.addEventListener("DOMContentLoaded", () => onLoaded());
