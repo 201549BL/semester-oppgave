@@ -148,7 +148,7 @@ html {
 }
 
 .preload {
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
   transition-duration: 0s !important;
 }
 
