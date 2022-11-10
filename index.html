@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hide-outline">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Web og systemutvikling" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
+    <meta name="keywords" content="html, css, javascript, web, system" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semester oppgave</title>
+    <title>Web og systemutvikling</title>
 
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
@@ -22,12 +25,12 @@
         <button
           class="button button--pink button--no-padding nav__button nav__button--open"
         >
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"
-            />
-          </svg>
+          <img
+            src="./public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
         </button>
 
         <!-- navigation  -->
@@ -35,13 +38,12 @@
           <button
             class="button button--pink button--no-padding nav__button nav__button--close"
           >
-            <!-- <img src="public/close.png" alt="menu close icon" height="32" /> -->
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6Z"
-              />
-            </svg>
+            <img
+              src="./public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
           </button>
 
           <ul class="nav__links">
@@ -67,12 +69,13 @@
 
     <!-- main -->
     <main class="body__main">
-      <section class="body-background">
-        <div class="main__container">
+      <div class="background border__bottom">
+        <section class="main__container">
           <!-- call to action -->
-          <article class="call-to-action">
+          <div class="call-to-action">
             <div class="call-to-action__window-group">
               <div
+                data-cta-filler="true"
                 class="call-to-action__window call-to-action__window--stagger-none"
               >
                 <div
@@ -91,6 +94,7 @@
                 <div class="call-to-action__body"></div>
               </div>
               <div
+                data-cta-filler="true"
                 class="call-to-action__window call-to-action__window--stagger-small call-to-action__window--translate-little"
               >
                 <div
@@ -109,6 +113,7 @@
                 <div class="call-to-action__body"></div>
               </div>
               <div
+                id="call-to-action"
                 class="call-to-action__window call-to-action__window--stagger-large call-to-action__window--translate-more"
               >
                 <div
@@ -125,20 +130,28 @@
                   ></span>
                 </div>
                 <div class="call-to-action__body">
-                  <h1 class="title">Web og system utvikling</h1>
+                  <div class="call-to-action__body-wrapper">
+                    <h1 class="title">
+                      Vil du lære mer om web og system utvikling?
+                    </h1>
+
+                    <a href="#articles" class="button button--pink"
+                      >Klikk her</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
             <!-- arrow svg -->
-            <div class="call-to-action__arrow">
+            <!-- <div class="call-to-action__arrow">
               <img src="public/curved-arrow-4573.svg" alt="" />
-            </div>
-          </article>
-        </div>
-      </section>
+            </div> -->
+          </div>
+        </section>
+      </div>
 
       <!-- cards  -->
-      <section class="main__container">
+      <section class="main__container" id="articles">
         <!-- card  -->
         <article class="card">
           <div class="card__image">
@@ -238,8 +251,15 @@
 
     <!-- footer -->
     <footer class="body__footer">
-      <div>copyright</div>
-      <div>footer</div>
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="./public/github-seeklogo.com.svg" alt="" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
