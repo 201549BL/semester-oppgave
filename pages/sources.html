@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,12 +22,12 @@
         <button
           class="button button--pink button--no-padding nav__button nav__button--open"
         >
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"
-            />
-          </svg>
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
         </button>
 
         <!-- navigation  -->
@@ -35,13 +35,12 @@
           <button
             class="button button--pink button--no-padding nav__button nav__button--close"
           >
-            <!-- <img src="public/close.png" alt="menu close icon" height="32" /> -->
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6Z"
-              />
-            </svg>
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
           </button>
 
           <ul class="nav__links">
@@ -161,8 +160,15 @@
 
     <!-- footer -->
     <footer class="body__footer">
-      <div>copyright</div>
-      <div>footer</div>
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="../public/github-seeklogo.com.svg" alt="" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

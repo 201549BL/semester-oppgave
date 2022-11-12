@@ -9,14 +9,13 @@ navButtons.forEach((btn) =>
 );
 
 // preload script
+// https://css-tricks.com/transitions-only-after-page-load/
 const preloadedElements = document.querySelectorAll(".preload");
-const onLoaded = (e) => {
-  setTimeout(
-    () => preloadedElements.forEach((el) => el.classList.remove("preload")),
-    50
-  );
-};
-document.addEventListener("DOMContentLoaded", () => onLoaded());
+
+setTimeout(
+  () => preloadedElements.forEach((el) => el.classList.remove("preload")),
+  50
+);
 
 // Remove outline until needed by tabbing
 const root = document.querySelector("html");
@@ -31,9 +30,11 @@ document.addEventListener("keydown", (e) => {
 // Set height of call-to-action dynamically
 const cta = document.querySelector("#call-to-action");
 const ctaRoot = document.querySelector(".call-to-action");
-const ctaFillers = document.querySelectorAll("[data-cta-filler='true'");
+const ctaFillers = document.querySelectorAll("[data-cta-filler='true']");
 
 const resizeCta = () => {
+  if (!ctaRoot) return;
+
   ctaRoot.style.height = cta.clientHeight + "px";
   ctaFillers.forEach((cf) => (cf.style.height = cta.clientHeight + "px"));
 };
