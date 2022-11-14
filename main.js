@@ -17,16 +17,6 @@ setTimeout(
   50
 );
 
-// Remove outline until needed by tabbing
-const root = document.querySelector("html");
-root.classList.add("hide-outline");
-
-document.addEventListener("keydown", (e) => {
-  if (e.key !== "Tab") return;
-
-  root.classList.remove("hide-outline");
-});
-
 // Set height of call-to-action dynamically
 const cta = document.querySelector("#call-to-action");
 const ctaRoot = document.querySelector(".call-to-action");

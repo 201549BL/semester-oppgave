@@ -71,13 +71,20 @@ svg {
   color: black;
 }
 
-.hide-outline *:focus {
-  outline: none;
-}
-
-*:focus {
+:focus {
   outline: var(--color-accessible-purple) solid var(--border-width);
   outline-offset: 0.2rem;
+}
+
+@supports selector(:focus-visible) {
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: var(--color-accessible-purple) solid var(--border-width);
+    outline-offset: 0.2rem;
+  }
 }
 
 .body {
