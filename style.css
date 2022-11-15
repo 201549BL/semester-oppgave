@@ -57,9 +57,16 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+ul {
   font-size: 1.1rem;
 }
+
+/* Jenny la til denne */
+.indenterDisse {
+  padding-left: 2rem;
+}
+/* --------------------------- */
 
 @media (max-width: 500px) {
   p {
@@ -879,9 +886,11 @@ h6 {
   width: 100%;
   gap: 0.5rem;
 }
+
 .article__content-image-with-text p,
-a {
-  align-self: end;
+.article__content-image-with-text a {
+  align-self: flex-end;
+  text-align: end;
 }
 
 .article__content-image {
@@ -915,7 +924,6 @@ aside {
 
 .aside--danger {
   background-color: var(--color-danger);
-  border-color: ;
 }
 
 .aside--warning {

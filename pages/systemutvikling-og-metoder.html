@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metoder</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="body">
+    <header class="body__header">
+      <div class="header__container">
+        <h3 class="logo">
+          <a href="/"> Gruppe 2 </a>
+        </h3>
+
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
+        </button>
+
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
+          </button>
+
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/" class="button button--pink">Hjem</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/about.html" class="button button--pink">
+                Om oss
+              </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/sources.html" class="button button--pink"
+                >Kilder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="body__main body-background-secondary">
+      <div class="main__container">
+        <article class="article">
+          <div class="article__image-header">
+            <img
+              src="../public/headerimg.jpg"
+              alt="Bilde av en leke-elefant som programmerer PHP."
+            />
+          </div>
+          <div class="article__content">
+            <h1>Systemutvikling og metoder</h1>
+            <h3>Hva er en metode?</h3>
+            <p>
+              En metode, innen systemutvikling, er en fremgangsmåte et
+              systemutviklings-team følger for å ha en strukturert og
+              kontrollert arbeidsmetode. Intensjonen er å gi teamet et verktøy
+              de kan bruke i alle prosjekter, som forhåpentligvis vil gjøre det
+              enklere å nå deres felles mål - et ferdig produkt. Dette skal
+              forhåpentligvis forhindre misforståelser, ettersleng av arbeid, og
+              mangel på fullførte prosjekter i tillegg til å spare penger.
+              Metoder, når i bruk, kan tilpasses prosjektet og teamet som bruker
+              den. Det er hovedsakelig to metodetyper - strukturerte og agile.
+            </p>
+            <h3>Strukturerte metoder</h3>
+            <p>
+              Strukturerte metoder, eller tradisjonelle metoder, er en type
+              struktur brukt i systemutvikling. Denne kategorien inneholder
+              metoder slik som SDLC - mer kjent som Fossefall, Sashimi, og
+              Spiral. Som eksempel bruker vi her Fossefallsmetoden.
+            </p>
+
+            <h4>Fossefallsmetoden</h4>
+            <p>
+              Denne metoden har et veldig billedlig navn. Konseptet er basert på
+              at hvert steg i utviklingsprosessen er et steg i en trapp, og
+              vannet (prosjektet) flyter nedover uten å kunne komme tilbake til
+              tidligere steg. Tanken er å ferdiggjøre arbeidet i hvert steg helt
+              før man beveger seg over til neste trinnet i fossefallet. Om det
+              er nødvendig å rette/endre på tidligere arbeid, må dette
+              planlegges for i et nytt trinn. Dette er en metode med lav
+              fleksibilitet, og man har planlagt alle stegene i forkant av
+              utførelse. Man har derfor en tydelig tidslinje på prosjektet, og
+              endringer i disse stegene er ikke alltid like enkle å utføre.
+              Vanligvis består prosjektene av 7 deler for hele livssyklusen til
+              produktet som utvikles: kravspesifikasjon, analyse, design,
+              utvikling, implementering, utgivelse og vedlikehold. Vi går litt
+              nærmere inn i hvert steg av prosessen.
+            </p>
+
+            <ol>
+              <li>Kravspesifikasjon / identifisering</li>
+              <p class="indenterDisse">
+                Her defineres kravene til prosjektet, og problemer som kan
+                oppstå under utviklingen identifiseres. Målet i dette steget er
+                å bli fullstendig (så langt det er mulig) informert om hva som
+                forventes av prosjektet, produktet og utfordringer som kan
+                oppstå underveis.
+              </p>
+              <br />
+              <li>Analyse</li>
+              <p class="indenterDisse">
+                I dette steget samler man info og dokumentasjon. Hvis det finnes
+                en eksisterende løsning, finner man info om denne og snakker med
+                brukerne av den. Målet er å finne ut hva man trenger for det nye
+                systemet.
+              </p>
+              <br />
+              <li>Design</li>
+              <p class="indenterDisse">
+                Man utvikler en prototype på design, og utvikler denne videre i
+                samarbeid slik at den oppnår kravene.
+              </p>
+              <br />
+              <li>Utvikling</li>
+              <p class="indenterDisse">
+                I dette steget utformer man produktet og utvikler det. Innenfor
+                dette steget er det egne steg, grunnet stor arbeidsmengde.
+              </p>
+              <br />
+              <li>Implementering</li>
+              <p class="indenterDisse">
+                I denne fasen utgir man produktet, og man bruker forskjellige
+                metoder for å få dette til verks. (Big bang, parallelle
+                systemer, innfasing etc.)
+              </p>
+              <br />
+              <li>Vedlikehold</li>
+              <p class="indenterDisse">
+                Denne fasen skjer etter utgivelsen av programmet, og før det
+                blir utdatert. Man vedlikeholder programvaren, gir oppdateringer
+                og legger inn forbedringer. Dette skjer helt frem til steg 7.
+              </p>
+              <br />
+              <li>Avslutning</li>
+              <p class="indenterDisse">
+                Her er produktet blitt utdatert av forskjellige grunner. Feks,
+                teknologiske utviklinger, standarder har endret seg, få brukere,
+                etc. I dette steget avslutter man bruken og støtten til
+                programmet.
+              </p>
+            </ol>
+            <aside class="aside aside--success">
+              Det er viktig å påpeke at det blir ofte brukt varianter av en
+              metode, og teorien er ofte ikke fulgt til punkt og prikke i
+              praksis. Det er nødvendig å modifisere fremgangsmåten, da man skal
+              heller tilpasse metoden til teamet og ikke vice versa.
+            </aside>
+
+            <div class="article__content-image-with-text">
+              <div class="article__content-image">
+                <img src="/public/sdlc.png" alt="SDCL LifeCycle" />
+              </div>
+              <a href="/pages/sources.html#"
+                >Figur 1.1: SDLC life cycle, 7 faser. Hentet fra s.42, Systems
+                Analysis and Design av Kendall og Kendall.</a
+              >
+            </div>
+
+            <br />
+
+            <h3>Agile metoder</h3>
+            <p>
+              Agile metoder, eller lettvekts-metoder, er motsetningen til de
+              strukturerte metodene. Noen eksempler er Kanban, SCRUM, XP, og
+              Crystal. Agile metoder baserer seg på muligheten til å iterere, og
+              ha tettere kommunikasjon mellom deltakere i prosjektet. Det er
+              høye krav i agil metode, så det er høyt verdsatt å ha mye
+              motivasjon for eget arbeid. Dette settet med metoder har sitt
+              utspring fra en gruppe med utviklere, som ønsket å forbedre
+              tilnærmingen til utvikling. (KILDE) Slik som Scrum Handbook
+              forklarer, waterfall metoden har noen problemer som agile metoder
+              (i dette tilfellet, SCRUM) ønsker å rette opp i. Noen problemer de
+              nevner er større kreativ frihet, mindre fokus på dokumentasjon,
+              mer iterasjon, teknologiske forandringer, etc. (s.16, Scrum
+              Handbook)
+              <br />
+              Vi ønsker å se litt nærmere på SCRUM som eksempel for agil metode.
+            </p>
+
+            <h4>SCRUM</h4>
+            <p>
+              Når man bruker SCRUM, ønsker man tett samarbeid mellom de
+              forskjellige partene i utviklingsprosessen - dvs kunden og teamet.
+              Det organiseres daglige møter, også kalt stand-ups, hvor man
+              forteller kortfattet hva man har gjort, hva som gjenstår, og hva
+              man har problemer med. Man ønsker å tydeliggjøre prosessen både
+              for teamet, men også for kunden. Kunden har også mulighet til å gi
+              innspill i løpet av denne prosessen. Man arbeider i gitte
+              tidsperioder hvor man higer etter en iterasjon som er mulig å
+              utgi. Ved hver nye iterasjon blir produktet bedre, og man får
+              rettet problemer og feil underveis i prosjektet i stedet for mot
+              slutten. Disse periodene kalles "sprints", og varer mellom 2-4
+              uker. Disse sprintene gjør det også enklere å legge til/endre
+              funksjoner på farten. Man fokuserer større på produktet enn ferden
+              og dokumentasjonen.
+            </p>
+
+            <p>
+              Negative sider ved SCRUM er at det er vanskeligere å forutse
+              timelines, dvs tiden hvert prosjekt tar kan variere fra hva man
+              antar først. Det som også kan oppstå som et problem er
+              feilkommunikasjon. Hvert under-team jobber med hver sin ting, og
+              det er fort gjort å snakke forbi hverandre. Dette kan resultere i
+              at flere team utvikler dobbelt, og det forlenger tidslinjen og kan
+              ødelegge fremgangen i en sprint.
+            </p>
+
+            <p>
+              I en SCRUM-prosess så finnes det 3 viktige parter - produkteier,
+              scrum master, og teamet. I begynnelsen av prosjektet går de sammen
+              om å opprette en product backlog. Dette er en samling av
+              spesifikasjoner og funksjoner som skal inkluderes i det endelige
+              produktet. Det er verdt å nevne at pga fokuset på iterasjon som
+              nevnt tidligere, så er ikke denne listen en endelig liste, men
+              “subject to change” over lengden av prosjektet. Sammen så designer
+              man produktet, og bryter funksjonene ned i enkle steg. Når man har
+              gjort dette, går man over til å planlegge sprints. “The product
+              backlog” listen over kravene til produktet, rangert etter
+              viktighetsgrad. utvikler seg med prosjektet, og man kan
+              kontinuerlig legge til og fjerne innhold i lista. “the sprint” 1-4
+              ukers iterasjoner. Fixed duration, når de er ferdig blir de ikke
+              utvidet om ting går galt. Viktige parter: Product Owner, Scrum
+              Master, Team. Man velger en “scrum master”. Denne personen legger
+              til rette for at teamet kan jobbe uforstyrret. De har
+              organisatoriske roller, og planlegger møter, etc.
+              Planleggingsfasen for hver sprint skjer i starten av sprinten.
+              Bare de viktige partene kan delta, og man diskuterer og planlegger
+              hver sprint ifht. kravene nevnt i product backlog, hvor man først
+              designer løsningen, og deretter bryter ned disse kravene til enkle
+              steg. <strong>ER DENNE RIKTIG?</strong>
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    Kilder: https://unsplash.com/photos/gAe1pHGc6ms for elefantbilde
+    <!-- footer -->
+    <footer class="body__footer">
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="/public/github-seeklogo.com.svg" alt="Github icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
