@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjektledelse og prosjektarbeid</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="body">
+    <!-- header -->
+    <header class="body__header">
+      <div class="header__container">
+        <!-- logo  -->
+        <h3 class="logo">
+          <a href="/"> Gruppe 2 </a>
+        </h3>
+
+        <!-- hamburger menu  -->
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
+        </button>
+
+        <!-- navigation  -->
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
+          </button>
+
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/" class="button button--pink">Hjem</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/about.html" class="button button--pink">
+                Om oss
+              </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/sources.html" class="button button--pink"
+                >Kilder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="body__main body-background-secondary">
+      <div class="main__container">
+        <article class="article">
+          <div class="article__image-header">
+            <img
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="article__content">
+            <!-- title -->
+
+            <h1>Webutvikling</h1>
+
+            <h2>Hva er webutvikling?</h2>
+            <p>
+              Kort forklart handler webutvikling om å utvikle og vedlikeholde
+              nettsider. Utviklingen av nettsider kan deles inn i to typer.
+              Frontend utvikling handler om å skape alt det brukeren av en
+              nettside kan se og gjøre. Backend utvikling handler mer om det
+              brukeren ikke ser, slik som å hente informasjon fra en database og
+              samle inn og bearbeide statistikk
+              <a href="/pages/sources.html#codeacademy2021"
+                >(Codeacademy, 2021).</a
+              >
+            </p>
+            <p>
+              Det finnes mange aspekter ved webutvikling. Her vil jeg nevne
+              noen.
+            </p>
+            <p>
+              Det kan være vanskelig å vite hvor man skal begynne når man
+              starter et nytt prosjekt. heldigvis finnes det noen verktøy som
+              hjelper oss med å være strukturerte og effektive i utviklingen.
+            </p>
+
+            <p>
+              En nettside er laget for at den skal kunne sees og tolkes av
+              mennesker. Dette stiller krav til nettsiden. Mennesker er
+              forskjellige, noen har utfordringer med å gjøre ting som andre
+              aldri tenker over. Nettsiden vi lager må kunne fungere for blinde,
+              døve, de med nedsatt motorisk evne, mm.
+            </p>
+
+            <p>
+              Videre så utvikles nettsiden av en utvikler. Hvordan vet
+              utvikleren at nettsiden fungerer for alle? Svaret er
+              brukertesting. Utvikleren må få tilbakemeldinger fra de som
+              faktisk skal bruke nettsiden. Uten dette så kan det hende
+              nettsiden bare fungerer for utvikleren, men ingen andre. Det er
+              lite fornuftig.
+            </p>
+
+            <p>
+              Dette er bare noen få deler av webutvikling. Vi skal se nærmere på
+              flere av disse senere i teksten.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="body__footer">
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

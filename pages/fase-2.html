@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utforske og designe</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="/main.js"></script>
+  </head>
+  <body class="body">
+    <!-- header -->
+    <header class="body__header">
+      <div class="header__container">
+        <!-- logo  -->
+        <h3 class="logo">
+          <a href="/"> Gruppe 2 </a>
+        </h3>
+
+        <!-- hamburger menu  -->
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
+        </button>
+
+        <!-- navigation  -->
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
+          </button>
+
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/" class="button button--pink">Hjem</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/about.html" class="button button--pink">
+                Om oss
+              </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/sources.html" class="button button--pink"
+                >Kilder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="body__main body-background-secondary">
+      <div class="main__container">
+        <article class="article">
+          <div class="article__image-header">
+            <img
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="article__content">
+            <!-- title -->
+
+            <h1>Webutvikling Fase 2</h1>
+            <h2>Utforske og designe</h2>
+
+            <p>
+              Design og utforskning kommer i den andre fasen av Webutvikling. I
+              denne fasen bygger man videre på funnene fra den første fasen. Der
+              fant man ut av hvilke behov som finnes, og i utforsknings- og
+              designfasen begynner arbeidet med å finne ut hvordan man best
+              mulig kan utforme en side som dekker disse behovene, samtidig som
+              siden skal være brukervennlig. Brukervennlighet (UX) handler i
+              stor grad om å følge de konvensjonene og standardene som allerede
+              finnes innenfor web. Man er for eksempel vant til at
+              søkefunksjonen er plassert i headeren, logo øverst til venstre og
+              handlekurv øverst til høyre. Når brukergrensesnittet (UI) ser ut
+              som det gjør andre steder, er det lett å navigere for brukerne og
+              man unngår forvirring og frustrasjon. Det samme gjelder ikoner, vi
+              er vant til at et forstørrelsesglass er søkefunksjonen, at tre
+              vannrette streker er en meny og at et handlekurv-ikon tar deg til
+              handlekurven din
+              <a href="/pages/sources.html#nielsen">(Nielsen, 2004)</a>. Dette
+              er enkle, men viktige standarder å følge for at siden skal være
+              oversiktlig brukervennlig.
+            </p>
+
+            <p>
+              En annen viktig ting å tenke på når det kommer til
+              brukervennlighet og brukeropplevelsen, er at den skal være
+              brukervennlig for alle. Her kommer universell utforming inn, med
+              universell utforming menes utforming eller tilrettelegging av
+              hovedløsningen, slik at funksjonen kan benyttes av flest mulig
+              (Marius Rohde Johannessen, personlig kommunikasjon/forelesning, 9.
+              november 2022). I Norge er det krav om at nettløsninger skal
+              tilfredsstille nivå 1 og 2 i WCAG 2.0 for private virksomheter.
+              For offentlige virksomheter er det noe strengere da nettløsningene
+              i offentlig sektor må kunne brukes av alle
+              <a href="/pages/sources.html#sandnes2">(Sandnes, 2022, s.33)</a>.
+              Universell utforming handler om at alt på siden skal være
+              tilgjengelig for alle som benytter seg av den, uavhengig av
+              funksjonsnedsettelser. Sidene må derfor være utformet på en måte
+              sånn at for eksempel svaksynte, blinde og døve også har tilgang
+              til den samme informasjonen. Bilder må for eksempel ha alternativ
+              tekst som skjermlesere kan lese opp, lydklipp må være tekstet og
+              man må oppgi språket som benyttes på siden i meta-informasjonen
+              slik at skjermleserne kan lese opp det som står på siden med
+              riktig stemme og språk. Kontrast på innholdet på siden, at folk
+              har mulighet til å forstørre tekst eller endre tekststørrelse og å
+              unngå å bruke rødt og grønt sammen er enkle grep som er med på å
+              gjøre siden mulig å benytte seg av for alle.
+            </p>
+            <p>
+              Når man har kommet langt nok til å starte med utformingen av siden
+              er det naturlig å begynne med informasjonsarkitekturen, altså
+              hvordan innholdet på nettsiden skal struktureres slik at det blir
+              så enkelt som mulig for brukeren å finne det innholdet de ønsker.
+              Når strukturen er på plass, kan man begynne å planlegge hvordan
+              man ønsker at brukergrensesnittet skal se ut ved å lage
+              wireframes. Wireframes er todimensjonale skisser hvor man kan
+              utforske hvor det er mest hensiktsmessig å plassere de
+              forskjellige elementene i brukergrensesnittet. Skissene skal blant
+              annet være raske å utforme og minimalistiske, denne prosessen kan
+              avdekke forskjellige problemstillinger og gi nye idéer
+              <a href="/pages/sources.html#sandnes2">(Sandnes, 2022, s.275)</a>.
+              Wireframes skal ha med elementene som skal være på siden, deres
+              plasseringer, og eventuelt spesielle egenskaper elementene skal
+              ha. Wireframes skal altså gi et bilde av strukturen og layouten
+              til siden, men skal ikke gå noe særlig mer i detaljer enn det
+              <a href="/pages/sources.html#fanguy">(Fanguy, 2018)</a>.
+            </p>
+            <p>
+              Prototyper går noen steg videre og har mer fokus på funksjonalitet
+              og hvordan det endelige produktet skal se ut. En prototype kan
+              være alt fra en samling med skisser (lo-fi prototyper) som viser
+              de forskjellige sidene, til en fungerende applikasjon (hi-fi
+              prototyper). Den største forskjellen mellom wireframes og
+              prototyper er at fokuset ligger på funksjonalitet og samhandling.
+              Når man samhandler med en prototype, skal man kunne se resultatet
+              av handlingen man utfører. Prototyper gjør det da mulig å teste
+              systemet sånn at man kan fange opp eventuelle problemer eller feil
+              før implementering. Prototyper er derfor viktige, fordi det koster
+              mye mindre i både tid og penger å gjøre de nødvendige
+              forbedringene
+              <a href="/pages/sources.html#babich">(Babich, 2019)</a> .
+            </p>
+            <p>
+              Websiden bør testes underveis og den bør testes av utenforstående,
+              altså ikke av de som har jobbet med siden, da det er fort gjort å
+              se seg blind på eget arbeid. Det mest hensiktsmessige er å få
+              personer fra målgruppen til å teste websiden
+              <a href="/pages/sources.html#sandnes2">(Sandnes, 2022, s.316)</a>.
+              Brukertesting av lo-fi prototyper kan avdekke problemer i
+              navigasjon og struktur, og man kan spare mye tid og penger på å
+              fange opp disse feilene før man har bygget opp et helt design
+              rundt det eller begynt å kode. På hi-fi prototyper er det også
+              lurt å gjennomføre brukertester, man kan for eksempel gi
+              testpanelet et scenario og be de tenke høyt mens de navigerer seg
+              gjennom det gitte scenarioet. Det er også viktig å påpeke at det
+              er siden eller systemet som blir testet, ikke brukeren
+              <a href="/pages/sources.html#fosspedersen"
+                >(Foss-Pedersen, 2017)</a
+              >. Man observerer nøye hvordan brukeren går frem for å løse
+              oppgaven, og man skal også la brukeren slite, dersom de ikke får
+              det til, det er jo nettopp disse observasjonene som viser hvor
+              eventuelle problemer ligger. Videre finnes det mange verktøy som
+              kan brukes til å evaluere forskjellige aspekter ved systemet.
+              Blikksporingsverktøy kan brukes til å finne ut hvilke elementer
+              brukeren legger merke til, og hvilke som ikke blir lagt merke til
+              i det hele tatt
+              <a href="/pages/sources.html#sandnes2">(Sandnes, 2022, s.327)</a>
+              . Det finnes også mange verktøy for å validere html- og Css-kode,
+              verktøy som sjekker gyldigheten av hyperlenker og en validator for
+              universell utforming<a href="/pages/sources.html#sandnes2"
+                >(Sandnes, 2022, s.326)</a
+              >
+              .
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="body__footer">
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

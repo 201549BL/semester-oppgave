@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjektledelse og prosjektarbeid</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="body">
+    <!-- header -->
+    <header class="body__header">
+      <div class="header__container">
+        <!-- logo  -->
+        <h3 class="logo">
+          <a href="/"> Gruppe 2 </a>
+        </h3>
+
+        <!-- hamburger menu  -->
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
+        </button>
+
+        <!-- navigation  -->
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
+          </button>
+
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/" class="button button--pink">Hjem</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/about.html" class="button button--pink">
+                Om oss
+              </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="/pages/sources.html" class="button button--pink"
+                >Kilder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="body__main body-background-secondary">
+      <div class="main__container">
+        <article class="article">
+          <div class="article__image-header">
+            <img
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="article__content">
+            <!-- title -->
+
+            <h1>HTML og CSS</h1>
+
+            <h2>I denne teksten skal vi se nærmere kodespråkene HTML og CSS</h2>
+
+            <p>
+              En nettside er et eller flere dokumenter som er tilgjengelig via
+              internett
+              <a href="/pages/sources.html#overby2021nettside">(Øverby, 2021)</a
+              >. Dokumentet ser ikke bare ut som et vanlig ark med tekst, det er
+              skrevet i et kodespråk som kalles HyperText Markup Language og
+              blir ofte bare kalt HTML
+              <a href="/pages/sources.html#natt2021">(Nätt, 2021)</a>.
+            </p>
+
+            <p>
+              HTML er en standardisert form for å beskrive et dokument. Det
+              brukes for å markere hva de ulike elementene på en nettside er.
+              Eksempler på dette kan være hva som er en overskrift, en paragraf
+              eller en knapp. HTML kommer med et sett av «tagger» for å markere
+              elementer.
+            </p>
+
+            <div>
+              Et eksempel på en tag ser slik ut:
+              <strong>&lt;h1&gt;</strong> Dette er en overskrift
+              <strong>&lt;/h1&gt;</strong>.
+            </div>
+            <p>
+              I eksemplet bruker vi en tag som representerer en overskrift.
+              Taggen består av en start og en slutt-tag og alt innhold mellom
+              disse vil bli gitt betydningen den taggen representerer. HTML
+              kommer med et sett med tagger, her en noen eksempler:
+            </p>
+            <ul>
+              <li>
+                Overskrift: &lt; h1 &gt; Denne teksten vil ha større tekst
+                størrelse &lt;/h1&gt;
+              </li>
+              <li>
+                Paragraf: &lt;p&gt; Denne teksten ser ut som et helt normalt
+                avsnitt &lt;/p&gt;
+              </li>
+              <li>
+                knapp: &lt;button&gt;Denne teksten vil se ut som en knapp og kan
+                trykkes på&lt;/button&gt;
+              </li>
+            </ul>
+
+            <p>
+              Her er et eksempel på hvordan HTML ser ut i en kode editor. Vi
+              kommer til å bruke eksemplet videre i teksten.
+            </p>
+
+            <div class="article__content-image">
+              <img
+                src="/public/html-eksempel.png"
+                alt="bildet viser et eksempel på html kode."
+              />
+            </div>
+
+            <p>
+              HTML er skapt for å leses av en nettleser
+              <a href="/pages/sources.html#natt2021">(Nätt, 2021)</a>. En
+              nettleser er programvare som tolker HTML og setter det sammen til
+              en nettside. Det finnes mange nettlesere slik som Microsoft Edge,
+              Google Chrome og Apple Safari
+              <a href="/pages/sources.html#overby2021nettleser"
+                >(Øverby, 2021)</a
+              >
+              for å nevne noen. En nettleser er et komplekst program med mange
+              flere funksjoner, men disse er utenfor oppgavens rammer og vil
+              ikke bli nevnt.
+            </p>
+
+            <p>
+              Dersom vi gir en nettleser HTML koden vi skrev ovenfor får vi
+              dette som resultat.
+            </p>
+
+            <div class="article__content-image">
+              <img
+                src="/public/html-uten-css.png"
+                alt="bildet viser et eksempel på html kode uten css."
+              />
+            </div>
+
+            <p>
+              Du vil fort oppdage at resultatet ser kjedelig ut. Det er fordi
+              nettleserens innebygde stilark er veldig simpelt. Det er stilarket
+              som bestemmer hvor stor en overskrift skal være, farger på
+              knapper, alt som har med designet av en nettside å gjøre.
+            </p>
+
+            <p>
+              Heldigvis kan vi lage vårt eget stilark som bestemmer hvordan vi
+              ønsker at nettsiden vår skal se ut. Dette gjøres med Cascading
+              Style Sheets som på kort kalles CSS og beskriver hvordan de ulike
+              taggene i et HTML dokument skal se ut. CSS er et annet kodespråk
+              enn HTML, men brukes ofte sammen.
+            </p>
+
+            <div class="article__content-image">
+              <img
+                src="/public/css-eksempel.png"
+                alt="bildet viser et eksempel på css."
+              />
+            </div>
+
+            <p>
+              I eksemplet over ser vi at en overskrift skal ha tekststørrelse
+              40px, en paragraf skal ha tekst størrelse 16px og en knapp skal ha
+              lyseblå bakgrunn og svart ramme. Når vi gir HTML tilgang til vårt
+              nye stil, blir resultatet slik.
+            </p>
+
+            <div class="article__content-image">
+              <img
+                src="/public/html-med-css.png"
+                alt="bildet viser et eksempel på html med css."
+              />
+            </div>
+
+            <p>
+              Med dette kan vi lage en enkel nettside og vi kan designe den slik
+              vi vil, men vi mangler en ting; interaktivitet. I eksemplene vi
+              har brukt over har vi beskrevet i HTML at det finnes en knapp, og
+              utformet den slik at den ser ut som en knapp, men det skjer
+              ingenting når vi trykker på den. Vi bruker et tredje kodespråk for
+              å skape interaktivitet på en nettside, dette kalles for
+              JavaScript. Her kan vi lage et «script» som sier at når brukeren
+              trykker på knappen, så skal et nytt vindu åpne med en tekst som
+              sier at brukeren trykket på knappen. Se eksempel nedenfor.
+            </p>
+
+            <div class="article__content-image">
+              <img
+                src="/public/eksempel-javascript.png"
+                alt="bildet viser et eksempel på javascript."
+              />
+            </div>
+
+            <p>
+              Disse tre kodespråkene er ofte en treenighet og styrer alt som er
+              synlig for brukeren av en nettside. Det er nettopp derfor denne
+              formen for kode kalles frontend.
+            </p>
+
+            <p>
+              Siden fronten kode skal sees og brukes mennesker, så stiller dette
+              noen krav til koden. Mennesker er forskjellige, noen har
+              utfordringer med å gjøre ting som andre aldri tenker over.
+              Nettsiden vi lager må kunne fungere for blinde, døve, de med
+              nedsatt motorisk evne, mm. Dette skal vi kikke nærmere på senere.
+            </p>
+
+            <h2>Backend</h2>
+
+            <p>
+              Backend kode er skjult for brukeren. Dette er kode som tar seg av
+              det som skjer bak kulissene. Eksempler på dette kan være kode som
+              logger en bruker inn i en tjeneste. Brukeren oppgir en epost og
+              passord i et skjema. Frontenden.....
+            </p>
+
+            
+        </article>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="body__footer">
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

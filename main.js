@@ -17,6 +17,23 @@ setTimeout(
   50
 );
 
+// remove animations when resizing screen
+const htmlRoot = document.querySelector("html");
+
+let timeoutId = null;
+
+window.addEventListener("resize", () => {
+  htmlRoot.classList.add("no-animations");
+
+  if (timeoutId) clearInterval(timeoutId);
+
+  timeoutId = setTimeout(() => {
+    htmlRoot.classList.remove("no-animations");
+
+    timeoutId = null;
+  }, 50);
+});
+
 // Set height of call-to-action dynamically
 const cta = document.querySelector("#call-to-action");
 const ctaRoot = document.querySelector(".call-to-action");
