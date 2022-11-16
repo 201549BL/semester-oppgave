@@ -49,3 +49,19 @@ const resizeCta = () => {
 window.addEventListener("resize", resizeCta);
 
 resizeCta();
+
+// Get url string
+const url = window.location.href.split("/");
+const trimmedUrl = url[url.length - 1].replace(".html", "");
+
+const navLinks = Array.from(document.querySelectorAll(".article__nav a"));
+
+navLinks.forEach((link) => {
+  if (!link.href.includes(trimmedUrl)) return;
+
+  link.closest("li").classList.add("navlink-active");
+
+  if (link.closest("details")) {
+    link.closest("details").setAttribute("open", "true");
+  }
+});

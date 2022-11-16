@@ -12,7 +12,7 @@
   <body class="body">
     <!-- header -->
     <header class="body__header">
-      <div class="header__container">
+      <div class="header__container header__container--wide">
         <!-- logo  -->
         <h3 class="logo">
           <a href="/"> Gruppe 2 </a>
@@ -66,7 +66,44 @@
 
     <!-- main -->
     <main class="body__main body-background-secondary">
-      <div class="main__container">
+      <div class="article-wrapper">
+        <nav class="article__nav-container">
+          <div class="article__nav">
+            <ul>
+              <li>
+                <a href="/pages/prosjektledelse-og-prosjektarbeid.html">
+                  Prosjektledelse og prosjekt arbeid
+                </a>
+              </li>
+              <li>
+                <details>
+                  <summary>Systemutvikling</summary>
+                  <ul>
+                    <li>
+                      <a href="/pages/system-utvikling.html">Introduksjon</a>
+                    </li>
+                    <li>
+                      <a href="/pages/systemutvikling-og-metoder.html"
+                        >Metoder</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Webutvikling</summary>
+                  <ul>
+                    <li><a href="/pages/webutvikling.html">Introduksjon</a></li>
+                    <li><a href="/pages/fase-1.html">Fase 1</a></li>
+                    <li><a href="/pages/fase-2.html">Fase 2</a></li>
+                    <li><a href="/pages/html-og-css.html">Fase 3</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <article class="article">
           <div class="article__image-header">
             <img
@@ -223,6 +260,22 @@
               logger en bruker inn i en tjeneste. Brukeren oppgir en epost og
               passord i et skjema. Frontenden.....
             </p>
+            <div class="article__pagination">
+              <a
+                class="article__pagination-button button button--pink button--no-padding"
+                href="/pages/fase-2.html"
+              >
+                <img src="/public/pil-venstre.svg" alt="" />
+                <p>Forrige side</p>
+              </a>
+              <a
+                class="article__pagination-button button button--pink button--no-padding button--hidden"
+                href="/pages/fase-1.html"
+              >
+                <p>Neste side</p>
+                <img src="/public/pil-hoyre.svg" alt="" />
+              </a>
+            </div>
           </div>
         </article>
       </div>
