@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metoder</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="body">
+    <header class="body__header">
+      <div class="header__container">
+        <h3 class="logo">
+          <a href="../"> Gruppe 2 </a>
+        </h3>
+
+        <button
+          class="button button--pink button--no-padding nav__button nav__button--open"
+        >
+          <img
+            src="../public/sidebar-menu-open.svg"
+            alt="Open sidebar"
+            height="32px"
+            width="32px"
+          />
+        </button>
+
+        <nav class="nav preload">
+          <button
+            class="button button--pink button--no-padding nav__button nav__button--close"
+          >
+            <img
+              src="../public/sidebar-menu-close.svg"
+              alt="Close sidebar"
+              height="32px"
+              width="32px"
+            />
+          </button>
+
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="../" class="button button--pink">Hjem</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="../pages/about.html" class="button button--pink">
+                Om oss
+              </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="../pages/sources.html" class="button button--pink"
+                >Kilder</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="body__main body-background-secondary">
+      <div class="article-wrapper">
+        <nav class="article__nav-container">
+          <div class="article__nav">
+            <ul>
+              <li>
+                <a href="../pages/prosjektledelse-og-prosjektarbeid.html">
+                  Prosjektledelse og prosjekt arbeid
+                </a>
+              </li>
+              <li>
+                <details>
+                  <summary>Systemutvikling</summary>
+                  <ul>
+                    <li>
+                      <a href="../pages/system-utvikling.html">Introduksjon</a>
+                    </li>
+                    <li>
+                      <a href="../pages/strukturerte-metoder.html"
+                        >Strukturerte metoder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../pages/agile-metoder.html">Agile metoder</a>
+                    </li>
+                    <li>
+                      <a href="../pages/valg-av-metode.html">Valg av metode</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Webutvikling</summary>
+                  <ul>
+                    <li>
+                      <a href="../pages/webutvikling.html">Introduksjon</a>
+                    </li>
+                    <li>
+                      <a href="../pages/fase-1.html"
+                        >Fase 1: Analysere og forstå</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../pages/fase-2.html"
+                        >Fase 2: Designe og utforske</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../pages/html-og-css.html"
+                        >Fase 3: Implementere</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <article class="article">
+          <div class="article__image-header">
+            <img
+              src="../public/headerimg.jpg"
+              alt="Bilde av en leke-elefant som programmerer PHP."
+            />
+          </div>
+          <div class="article__content">
+            <h1>Så hvilken metode skal man velge?</h1>
+            <p>
+              Vi har fortalt om strukturerte metoder og agile metoder - her vil
+              vi fortsette å bruke eksemplene fra tidligere, men heller fokusere
+              på hva som er positivt og negativt ved hver metode. Ingen metoder
+              er universelle, og derfor vil vi bruke den ene over den andre i
+              visse situasjoner. Det som vi ønsker å gå nærmere inn på er
+              akkurat hvilken metode som er best til hva - og hvorfor.
+            </p>
+            <p>
+              Under lister vi opp noen eksempler på fordeler og ulemper i de
+              forskjellige metode-typene. Vi ser i denne delen vekk fra
+              muligheten til å tilpasse metoden til prosjektet, og fokuserer på
+              ren Fossefall- og SCRUM-metode.
+            </p>
+
+            <h2>Agile/Scrum pros & cons</h2>
+
+            <table class="AgileTable">
+              <thead>
+                <tr>
+                  <th>Pros</th>
+                  <th>Cons</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <b>+</b> Hurtig utvikling, kort vei til første utkast*
+                  </td>
+                  <td>
+                    <b>-</b> Ved dårlig kommunikasjon, kan det forlenge
+                    tidsramme**
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>+</b> Selvstendig og selv-organisert arbeid*</td>
+                  <td><b>-</b> Vanskelig å beregne nøyaktig tidsramme*</td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>+</b> Enkelt å forandre "on the fly" pga. itereringsevne,
+                    tett kontakt med kunde**
+                  </td>
+                  <td><b>-</b> Fare for å ha overlappende arbeid**</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Strukturert/Fossefall pros & cons</h2>
+
+            <table class="WaterfallTable">
+              <thead>
+                <tr>
+                  <th>Pros</th>
+                  <th>Cons</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>+</b> Prosjekter med høy nøyaktighet drar nytte*</td>
+                  <td><b>-</b> Større mengde dokumentasjon påkrevet*</td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>+</b> Konkret plan over prosjektet fra start til slutt**
+                  </td>
+                  <td>
+                    <b>-</b> Liten fleksibilitet om standarder/teknologi skulle
+                    endres*
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>+</b> Mer strukturert arbeidsflyt, da alle stegene må
+                    kompletteres før man går videre**
+                  </td>
+                  <td>
+                    <b>-</b> Kan få eureka-opplevelser sent i prosjekt - da må
+                    ny fase for feks. utvikling planlegges***
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="display: flex; flex-direction: column">
+              <cite
+                >*(Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig
+                kommunikasjon, 24. oktober 2022)</cite
+              >
+              <cite>**(Hoory & Bottorf, 2022)</cite>
+              <cite>***(Sutherland, 2014, s.15-17)</cite>
+            </div>
+
+            <h3>Oppsummering SCRUM</h3>
+            <p>Iterativ utvikling, stegene repeteres.</p>
+            <p>
+              Denne metoden egner seg til prosjekter som trenger høyt tempo og
+              muligheten for å snu på hælen. Det er større valgfrihet og
+              mulighet til å bidra, da alle kan foreslå funksjoner til Product
+              Backlog, og man har større frihet til å velge oppgaver selv ut fra
+              tidligere utformede mål.
+            </p>
+
+            <p>
+              Man får hurtig sett første utkast til produktet, gjerne innenfor
+              første måneden av prosjektet. Nettopp på grunnlag av denne
+              egenskapen, så passer metoden til bruk i IT-utvikling, og f.eks
+              markedsføring. I begge disse feltene har vi behov for å kunne snu
+              raskt, legge til/fjerne funksjoner eller tilpasse oss en ny trend
+              i markedet. Å bruke en agil metode slik som SCRUM krever disiplin
+              og kommunikasjon - om kommunikasjonen skulle være for dårlig så
+              vil tidsrammen til prosjektet bli forlenget.
+            </p>
+
+            <h3>Oppsummering Fossefall</h3>
+            <p>Inkrementell utvikling, steg-til steg.</p>
+
+            <p>
+              Da produktet blir planlagt, designet og utformet tidlig i
+              prosessen, kan vi dermed sikre oss for logiske feil i kode. Derfor
+              egner det seg til sikkerhetsmessige prosjekter, hvor vi må vite at
+              produktet “fungerer” før vi har det.
+            </p>
+
+            <p>
+              Det egner seg også til prosjekter hvor det ikke er stor risiko for
+              forandring i teknologi/standarder, slik som byggeprosjekter og
+              lignende. En bonus her er at tidsrammen er enklere å beregne, da
+              man har produktet og planen klar før utviklingen starter. Alle har
+              en satt plan for hva de skal gjøre ila. prosjektet, og det er
+              liten sannsynlighet for at en funksjon har overlappende kode fra 2
+              team. Samtidig er det liten kreativ frihet, og det er krav til
+              nøye dokumentasjon.
+            </p>
+
+            <img
+              id="ProsCons"
+              src="../public/pros_cons.png"
+              alt="Pluss og minus"
+            />
+            <cite>(Figur 5, 2022, VanReeel)</cite>
+
+            <h3>Så hva skal man velge?</h3>
+
+            <p>
+              For oss impliserer det vi har lært om metodekategoriene og
+              metodene i seg selv at agile metoder er hovedsakelig anbefalt for
+              prosjekter innen IT- og utvikling. Dette kommer av den store
+              fleksibiliteten, og enkel mulighet for å endre prosjektplan
+              underveis. I andre prosjekter hvor produktet er noe mer permanent
+              og ikke lett foranderlig, slik som i byggebransjen, kan det være
+              gunstig å bruke Fossefallmetoden.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="body__footer">
+      <div class="footer__container">
+        <a
+          class="text-with-icon"
+          href="https://github.com/201549BL/semester-oppgave"
+        >
+          <p>Github</p>
+          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

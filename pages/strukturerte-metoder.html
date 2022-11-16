@@ -12,7 +12,7 @@
     <header class="body__header">
       <div class="header__container header__container--wide">
         <h3 class="logo">
-          <a href="/"> Gruppe 2 </a>
+          <a href="../"> Gruppe 2 </a>
         </h3>
 
         <button
@@ -21,8 +21,8 @@
           <img
             src="../public/sidebar-menu-open.svg"
             alt="Open sidebar"
-            height="32px"
-            width="32px"
+            height="32"
+            width="32"
           />
         </button>
 
@@ -33,24 +33,24 @@
             <img
               src="../public/sidebar-menu-close.svg"
               alt="Close sidebar"
-              height="32px"
-              width="32px"
+              height="32"
+              width="32"
             />
           </button>
 
           <ul class="nav__links">
             <li class="nav__link">
-              <a href="/" class="button button--pink">Hjem</a>
+              <a href="../" class="button button--pink">Hjem</a>
             </li>
 
             <li class="nav__link">
-              <a href="/pages/about.html" class="button button--pink">
+              <a href="../pages/about.html" class="button button--pink">
                 Om oss
               </a>
             </li>
 
             <li class="nav__link">
-              <a href="/pages/sources.html" class="button button--pink"
+              <a href="../pages/sources.html" class="button button--pink"
                 >Kilder</a
               >
             </li>
@@ -65,7 +65,7 @@
           <div class="article__nav">
             <ul>
               <li>
-                <a href="/pages/prosjektledelse-og-prosjektarbeid.html">
+                <a href="../pages/prosjektledelse-og-prosjektarbeid.html">
                   Prosjektledelse og prosjekt arbeid
                 </a>
               </li>
@@ -74,12 +74,18 @@
                   <summary>Systemutvikling</summary>
                   <ul>
                     <li>
-                      <a href="/pages/system-utvikling.html">Introduksjon</a>
+                      <a href="../pages/system-utvikling.html">Introduksjon</a>
                     </li>
                     <li>
-                      <a href="/pages/systemutvikling-og-metoder.html"
-                        >Metoder</a
+                      <a href="../pages/strukturerte-metoder.html"
+                        >Strukturerte metoder</a
                       >
+                    </li>
+                    <li>
+                      <a href="../pages/agile-metoder.html">Agile metoder</a>
+                    </li>
+                    <li>
+                      <a href="../pages/valg-av-metode.html">Valg av metode</a>
                     </li>
                   </ul>
                 </details>
@@ -88,10 +94,10 @@
                 <details>
                   <summary>Webutvikling</summary>
                   <ul>
-                    <li><a href="/pages/webutvikling.html">Introduksjon</a></li>
-                    <li><a href="/pages/fase-1.html">Fase 1</a></li>
-                    <li><a href="/pages/fase-2.html">Fase 2</a></li>
-                    <li><a href="/pages/html-og-css.html">Fase 3</a></li>
+                    <li><a href="../pages/webutvikling.html">Introduksjon</a></li>
+                    <li><a href="../pages/fase-1.html">Fase 1: Analysere og forstå</a></li>
+                    <li><a href="../pages/fase-2.html">Fase 2: Designe og utforske</a></li>
+                    <li><a href="../pages/html-og-css.html">Fase 3: Implementere</a></li>
                   </ul>
                 </details>
               </li>
@@ -106,7 +112,7 @@
             />
           </div>
           <div class="article__content">
-            <h1>Systemutvikling og metoder</h1>
+            <!-- <h1>Systemutvikling og metoder</h1>
             <h3>Hva er en metode?</h3>
             <p>
               En metode, innen systemutvikling, er en fremgangsmåte et
@@ -206,9 +212,9 @@
 
             <div class="article__content-image-with-text">
               <div class="article__content-image">
-                <img src="/public/sdlc.png" alt="SDCL LifeCycle" />
+                <img src="../public/sdlc.png" alt="SDCL LifeCycle" />
               </div>
-              <a href="/pages/sources.html#"
+              <a href="../pages/sources.html#"
                 >Figur 1.1: SDLC life cycle, 7 faser. Hentet fra s.42, Systems
                 Analysis and Design av Kendall og Kendall.</a
               >
@@ -286,21 +292,76 @@
               hver sprint ifht. kravene nevnt i product backlog, hvor man først
               designer løsningen, og deretter bryter ned disse kravene til enkle
               steg. <strong>ER DENNE RIKTIG?</strong>
-            </p>
+            </p> -->
+            <h1>Metoder</h1>
+                  <h3>Hva er en metode?</h3>
+                  <p>
+                    En metode, innen systemutvikling, er en fremgangsmåte et systemutviklings-team følger for å ha en strukturert og kontrollert arbeidsmetode(Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig kommunikasjon, 26. oktober 2022). Intensjonen er å gi teamet et 
+                    verktøy de kan bruke i alle prosjekter, som forhåpentligvis vil gjøre det enklere å nå deresfelles mål - et ferdig produkt. Dette skal forhåpentligvis forhindre misforståelser, ettersleng av arbeid, og mangel på fullførte 
+                    prosjekter i tillegg til å spare penger. Metoder, når i bruk, kan tilpasses prosjektet og teamet som bruker den.
+                    <br>
+                    <p>
+                      Det er hovedsakelig to metodetyper - strukturerte og agile.
+                    </p>
+                </p>
+                <h3>Strukturerte metoder</h3>
+                <p>Strukturerte metoder, eller tradisjonelle metoder, er en type struktur brukt i systemutvikling. Denne kategorien inneholder 
+                  metoder slik som SDLC - mer kjent som Fossefall(Kendall & Kendall, 2019, s. 42), Sashimi, og Spiral. Som eksempel bruker vi her Fossefallsmetoden.</p>
+            
+                <h4>Fossefallsmetoden</h4>
+                <p>
+                Denne metoden har et veldig billedlig navn. Konseptet er basert på at hvert steg i utviklingsprosessen er et steg i en trapp, og vannet (prosjektet) flyter nedover uten å kunne komme tilbaketil tidligere steg. Tanken er å ferdiggjøre arbeidet i hvert 
+                steg helt før man beveger seg over til neste trinnet i fossefallet. Om det er nødvendig å rette/endre på tidligere arbeid, må dette planlegges for i et nytt trinn (Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig kommunikasjon, 26. oktober 2022).
+                Dette er en metode med lav fleksibilitet, og man har planlagt alle stegene i forkant av utførelse. Man har derfor en tydelig tidslinje på prosjektet, og endringer i disse stegene er ikke alltid like enkle å utføre. Vanligvis består prosjektene av 7 
+                deler for hele livssyklusen til produktet som utvikles: kravspesifikasjon, analyse, design, utvikling, implementering, utgivelse og vedlikehold(Kendall & Kendall, 2019, s. 42). Vi går litt nærmere inn i hvert steg av prosessen.
+                
+                <h4>Steg i Fossefallsmetoden</h4>
+                <ol>
+                    <li>Kravspesifikasjon / identifisering</li>
+                    <p class="indenterDisse">Her defineres kravene til prosjektet, og problemer som kan oppstå under utviklingen identifiseres. Målet i dette steget er å bli fullstendig (så langt det er mulig) informert om hva som forventes av prosjektet, produktet og utfordringer som kan oppstå underveis.</p>
+                    <br>
+                    <li>Analyse</li>
+                    <p class="indenterDisse">I dette steget samler man info og dokumentasjon. Hvis det finnes en eksisterende løsning, finner man info om denne og snakker med brukerne av den. Målet er å finne ut hva man trenger for det nye systemet.</p>
+                    <br>
+                    <li>Design</li>
+                    <p class="indenterDisse">Man utvikler en prototype på design, og utvikler denne videre i samarbeid slik at den oppnår kravene.</p>
+                    <br>
+                    <li>Utvikling</li>
+                    <p class="indenterDisse">I dette steget utformer man produktet og utvikler det. Innenfor dette steget er det egne steg, grunnet stor arbeidsmengde.</p>
+                    <br>
+                    <li>Implementering</li>
+                    <p class="indenterDisse">I denne fasen utgir man produktet, og man bruker forskjellige implementeringsstrategier for å få dette til verks. (Big bang, parallelle systemer, innfasing etc.).</p>
+                    <br>
+                    <li>Vedlikehold</li>
+                    <p class="indenterDisse">Denne fasen skjer etter utgivelsen av programmet, og før det blir utdatert. Man vedlikeholder programvaren, gir oppdateringer og legger inn forbedringer. Dette skjer helt frem til steg 7.</p>
+                    <br>
+                    <li>Avslutning</li>
+                    <p class="indenterDisse">Her er produktet blitt utdatert av forskjellige grunner. Feks, teknologiske utviklinger, standarder har endret seg, få brukere, etc. I dette steget avslutter man bruken og støtten til programmet.</p>
+                </ol>
+                <div style="font-size: small;">
+                  Kilde for info <i>Steg i Fossefallsmetoden</i> hentet ut av PDF: (Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig kommunikasjon, 26. oktober 2022).
+                </div>
+
+                <aside class="aside aside--success">Det er viktig å påpeke at det blir ofte brukt varianter av en metode, og teorien er 
+                  ofte ikke fulgt til punkt og prikke i praksis. Det er nødvendig å modifisere fremgangsmåten, da man skal heller tilpasse metoden til teamet og ikke vice versa.</aside>
+                </p>
+
+                <div><img src="../public/sdlc.png" alt="SDCL LifeCycle"></div>
+                <div>Figur 4: SDLC life cycle (Kendall & Kendall, 2019, s.42)</div>
             <div class="article__pagination">
               <a
                 class="article__pagination-button button button--pink button--no-padding"
-                href="/pages/system-utvikling.html"
+                href="../pages/system-utvikling.html"
               >
-                <img src="/public/pil-venstre.svg" alt="" />
+                <img src="../public/pil-venstre.svg" alt="" />
                 <p>Forrige side</p>
               </a>
               <a
                 class="article__pagination-button button button--pink button--no-padding"
-                href="/pages/webutvikling.html"
+                href="../pages/agile-metoder.html"
               >
                 <p>Neste side</p>
-                <img src="/public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="" />
               </a>
             </div>
           </div>
@@ -317,7 +378,7 @@
           href="https://github.com/201549BL/semester-oppgave"
         >
           <p>Github</p>
-          <img src="/public/github-seeklogo.com.svg" alt="Github icon" />
+          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
         </a>
       </div>
     </footer>

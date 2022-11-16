@@ -65,3 +65,11 @@ navLinks.forEach((link) => {
     link.closest("details").setAttribute("open", "true");
   }
 });
+
+// Make index cards able to open and close
+const cards = Array.from(document.querySelectorAll(".card"));
+cards.forEach((card) => {
+  card.querySelector("button")?.addEventListener("click", () => {
+    card.classList.toggle("card--open");
+  });
+});

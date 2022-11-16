@@ -1,0 +1,30 @@
+BILDER
+-------------------------------------
+HEADER:
+Figur 1. PHP Plush Elephant, 2020, av Ben Griffiths. https://unsplash.com/photos/gAe1pHGc6ms
+
+Figur 2. Scrum Framework, 2022, av Scrum.org. https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/2022-10/scrum_framework.png
+
+Figur 3. Done, Doing, To Do, 2021, av Eden Constantino. https://unsplash.com/photos/OXmym9cuaEY
+
+Figur 4. SDLC life cycle, 2019, av Kendall & Kendall, "Systems Analysis and Design", 10th Edition, s.42. Pearson Education.
+
+Figur 5. Minus & pluss tegn , hentet 16.11.2022, av VanReeel, https://www.shutterstock.com/nb/image-vector/minus-plus-signs-icons-flat-round-678038509
+
+
+STRUCTURED
+-------------------------------------
+Kendall, K. & Kendall, J. (2019)  "Systems Analysis and Design", 10th Edition. Pearson Education.
+
+
+AGILE
+-------------------------------------
+Agile Manifesto. (2001, u.d.) Agile Manifesto. https://agilemanifesto.org/
+
+Sutherland, J. (2014) The Scrum Handbook. Scrum Inc. 
+https://www.scruminc.com/wp-content/uploads/2014/07/The-Scrum-Handbook.pdf
+
+
+GENERELLE
+-------------------------------------
+Hoory L., Bottorff C.(2022). Agile Vs. Waterfall: Which Project Management Methodology Is Best For You? Forbes. https://www.forbes.com/advisor/business/agile-vs-waterfall-methodology/
