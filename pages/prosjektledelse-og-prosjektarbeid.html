@@ -2,14 +2,20 @@
 <html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Prosjektledelse og prosjektarbeid" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prosjektledelse og prosjektarbeid</title>
-
     <link rel="stylesheet" href="../style.css" />
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <!-- header -->
     <header class="body__header">
       <div class="header__container header__container--wide">
@@ -124,11 +130,11 @@
             </ul>
           </div>
         </nav>
-        <article class="article">
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
+              src="../public/teamwork.avif"
+              alt="Et bilde som viser mennesker i et møte"
             />
           </div>
           <div class="article__content">
@@ -167,7 +173,10 @@
 
             <div class="article__content-image-with-text">
               <div class="article__content-image">
-                <img src="../public/prince2figur.jpg" alt="sdfffds" />
+                <img
+                  src="../public/prince2figur.jpg"
+                  alt="En illustrasjon av Prince2 modellen"
+                />
               </div>
               <a href="../pages/sources.html#priya"
                 >(Figur 1. <em> PRINCE2,</em> 27.June 2014, av Priya Ranjan)</a
@@ -229,7 +238,10 @@
               <a
                 class="article__pagination-button button button--pink button--no-padding button--hidden"
               >
-                <img src="../public/pil-venstre.svg" alt="" />
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
                 <p>Forrige side</p>
               </a>
               <a
@@ -237,7 +249,7 @@
                 href="../pages/system-utvikling.html"
               >
                 <p>Neste side</p>
-                <img src="../public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
               </a>
             </div>
           </div>
@@ -247,14 +259,33 @@
 
     <!-- footer -->
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

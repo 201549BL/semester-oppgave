@@ -2,14 +2,21 @@
 <html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Webutvikling fase 3: implentere" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prosjektledelse og prosjektarbeid</title>
+    <title>Implementere</title>
 
     <link rel="stylesheet" href="../style.css" />
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <!-- header -->
     <header class="body__header">
       <div class="header__container header__container--wide">
@@ -66,7 +73,7 @@
 
     <!-- main -->
     <main class="body__main body-background-secondary">
-      <div class="article-wrapper">
+      <section class="article-wrapper">
         <nav class="article__nav-container">
           <div class="article__nav">
             <ul>
@@ -124,15 +131,15 @@
             </ul>
           </div>
         </nav>
-        <article class="article">
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
+              src="../public/code.avif"
+              alt="Bildet viser en pc med kode på skjermen"
             />
           </div>
           <div class="article__content">
-            <h1>Fase 3: Implementasjon</h1>
+            <h1>Fase 3: Implementere</h1>
 
             <p>
               Til nå har vi planlagt og testet hvordan nettsiden skal se ut og
@@ -294,16 +301,59 @@
             <div class="article__content-image">
               <img
                 src="../public/frontend-backend-illustrasjon.svg"
-                alt="bildet viser et eksempel på javascript."
+                alt="bildet er en illustrasjon av frontend og backend"
               />
             </div>
+
+            <p>
+              Bildet over demonstrerer hvordan frontend og backend snakker
+              sammen.
+            </p>
+
+            <h2>Testing</h2>
+
+            <p>
+              For å være sikre på at nettsiden vi utvikler fyller behovet til
+              produkteieren så må den testes. Vi skiller mellom to typer
+              testing: <i>formativ</i> og <i>summativ</i> testing.
+              <a href="../pages/sources.html#sandnes3"
+                >(Sandnes, 2022, s.316)</a
+              >
+            </p>
+
+            <p>
+              Formativ testing handler om å teste nettsiden mens den utvikles.
+              Dette betyr at ulike prototyper blir testet av et utvalg som
+              representerer brukerne av systemet. Testerne gir utviklerne
+              tilbakemeldinger på hva hva som var bra og hva som kan bli bedre
+              på prototypen. Deretter produserer nye prototyper som blir testet
+              på nytt. Denne prosessen gjentar seg til prototypen er akseptert
+              av produkteier og brukerne.
+            </p>
+
+            <p>
+              Summativ testing handler om å teste systemet når det nærmer seg
+              helt ferdig. Dette er en kontroll av systemet i sin helhet.
+            </p>
+
+            <p>
+              Formativ testing gir store fordeler i utviklingen. Grunnleggende
+              problemer med design og funksjoner kan endres tidligere i
+              utvilkingsprosessen. Problemer som avdekkes ved summativ testing
+              kan være for sent i utviklingsprosessen til å endres på. Det kan
+              vøre at utviklingsbudsjettet er brukt opp eller at fristen for at
+              systemet settes i produksjon er for nærme.
+            </p>
 
             <div class="article__pagination">
               <a
                 class="article__pagination-button button button--pink button--no-padding"
                 href="../pages/fase-2.html"
               >
-                <img src="../public/pil-venstre.svg" alt="" />
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
                 <p>Forrige side</p>
               </a>
               <a
@@ -311,24 +361,43 @@
                 href="../pages/fase-1.html"
               >
                 <p>Neste side</p>
-                <img src="../public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
               </a>
             </div>
           </div>
         </article>
-      </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

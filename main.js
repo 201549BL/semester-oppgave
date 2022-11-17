@@ -50,26 +50,18 @@ window.addEventListener("resize", resizeCta);
 
 resizeCta();
 
-// Get url string
-const url = window.location.href.split("/");
-const trimmedUrl = url[url.length - 1].replace(".html", "");
+// Set active css styling on current page in sidebar navigation
+const urlObject = new URL(window.location.href);
+
+const currentUrl = urlObject.pathname;
 
 const navLinks = Array.from(document.querySelectorAll(".article__nav a"));
 
 navLinks.forEach((link) => {
-  if (!link.href.includes(trimmedUrl)) return;
+  if (!link.href.includes(currentUrl)) return;
 
   link.closest("li").classList.add("navlink-active");
-
   if (link.closest("details")) {
     link.closest("details").setAttribute("open", "true");
   }
-});
-
-// Make index cards able to open and close
-const cards = Array.from(document.querySelectorAll(".card"));
-cards.forEach((card) => {
-  card.querySelector("button")?.addEventListener("click", () => {
-    card.classList.toggle("card--open");
-  });
 });

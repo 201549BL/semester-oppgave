@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Agile metoder" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metoder</title>
@@ -9,6 +11,11 @@
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <header class="body__header">
       <div class="header__container header__container--wide">
         <h3 class="logo">
@@ -60,7 +67,7 @@
     </header>
 
     <main class="body__main body-background-secondary">
-      <div class="article-wrapper">
+      <section class="article-wrapper">
         <nav class="article__nav-container">
           <div class="article__nav">
             <ul>
@@ -94,323 +101,187 @@
                 <details>
                   <summary>Webutvikling</summary>
                   <ul>
-                    <li><a href="../pages/webutvikling.html">Introduksjon</a></li>
-                    <li><a href="../pages/fase-1.html">Fase 1: Analysere og forstå</a></li>
-                    <li><a href="../pages/fase-2.html">Fase 2: Designe og utforske</a></li>
-                    <li><a href="../pages/html-og-css.html">Fase 3: Implementere</a></li>
+                    <li>
+                      <a href="../pages/webutvikling.html">Introduksjon</a>
+                    </li>
+                    <li>
+                      <a href="../pages/fase-1.html"
+                        >Fase 1: Analysere og forstå</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../pages/fase-2.html"
+                        >Fase 2: Designe og utforske</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../pages/html-og-css.html"
+                        >Fase 3: Implementere</a
+                      >
+                    </li>
                   </ul>
                 </details>
               </li>
             </ul>
           </div>
         </nav>
-        <article class="article">
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
-              src="../public/headerimg.jpg"
-              alt="Bilde av en leke-elefant som programmerer PHP."
+              src="../public/scrum.avif"
+              alt="Bildet viser en tavle med lapper"
             />
           </div>
           <div class="article__content">
-            <!-- <h1>Systemutvikling og metoder</h1>
-            <h3>Hva er en metode?</h3>
+            <h1>Agile Metoder</h1>
+
             <p>
-              En metode, innen systemutvikling, er en fremgangsmåte et
-              systemutviklings-team følger for å ha en strukturert og
-              kontrollert arbeidsmetode. Intensjonen er å gi teamet et verktøy
-              de kan bruke i alle prosjekter, som forhåpentligvis vil gjøre det
-              enklere å nå deres felles mål - et ferdig produkt. Dette skal
-              forhåpentligvis forhindre misforståelser, ettersleng av arbeid, og
-              mangel på fullførte prosjekter i tillegg til å spare penger.
-              Metoder, når i bruk, kan tilpasses prosjektet og teamet som bruker
-              den. Det er hovedsakelig to metodetyper - strukturerte og agile.
-            </p>
-            <h3>Strukturerte metoder</h3>
-            <p>
-              Strukturerte metoder, eller tradisjonelle metoder, er en type
-              struktur brukt i systemutvikling. Denne kategorien inneholder
-              metoder slik som SDLC - mer kjent som Fossefall, Sashimi, og
-              Spiral. Som eksempel bruker vi her Fossefallsmetoden.
+              Agile metoder, eller lettvekts-metoder, er på noen måter
+              motsetningen til de strukturerte metodene. Noen eksempler er
+              Kanban, SCRUM, XP, og Crystal. Agile kan bli oppsummert i 5
+              kategorier - verktøy, praksis, metoder, prinsipper og verdier
+              (Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig
+              kommunikasjon, 24. oktober 2022). Verdiene kommer fra Agile
+              Manifesto laget av en gruppe utviklere som ønsket å definere et
+              sett med verdier for effektiv og verdifull utvikling av kode(Agile
+              Manifesto, 2001). Manifestoet er utgangspunktet for prinsippene,
+              metoder og praksis.
             </p>
 
-            <h4>Fossefallsmetoden</h4>
+            <aside class="aside--success">
+              <p>
+                <b>Individuals and interactions</b> over processes and tools
+              </p>
+
+              <p><b>Working software</b> over comprehensive documentation</p>
+              <p><b>Customer collaboration</b> over contract negotiation</p>
+              <p><b>Responding to change</b> over following a plan</p>
+              <a href="../pages/sources.html#agilemanifesto"
+                >(Agile Manifesto, 2001)</a
+              >
+            </aside>
+
             <p>
-              Denne metoden har et veldig billedlig navn. Konseptet er basert på
-              at hvert steg i utviklingsprosessen er et steg i en trapp, og
-              vannet (prosjektet) flyter nedover uten å kunne komme tilbake til
-              tidligere steg. Tanken er å ferdiggjøre arbeidet i hvert steg helt
-              før man beveger seg over til neste trinnet i fossefallet. Om det
-              er nødvendig å rette/endre på tidligere arbeid, må dette
-              planlegges for i et nytt trinn. Dette er en metode med lav
-              fleksibilitet, og man har planlagt alle stegene i forkant av
-              utførelse. Man har derfor en tydelig tidslinje på prosjektet, og
-              endringer i disse stegene er ikke alltid like enkle å utføre.
-              Vanligvis består prosjektene av 7 deler for hele livssyklusen til
-              produktet som utvikles: kravspesifikasjon, analyse, design,
-              utvikling, implementering, utgivelse og vedlikehold. Vi går litt
-              nærmere inn i hvert steg av prosessen.
+              Vi ønsker å se litt nærmere på SCRUM som eksempel for agil metode.
             </p>
 
-            <ol>
-              <li>Kravspesifikasjon / identifisering</li>
-              <p class="indenterDisse">
-                Her defineres kravene til prosjektet, og problemer som kan
-                oppstå under utviklingen identifiseres. Målet i dette steget er
-                å bli fullstendig (så langt det er mulig) informert om hva som
-                forventes av prosjektet, produktet og utfordringer som kan
-                oppstå underveis.
-              </p>
-              <br />
-              <li>Analyse</li>
-              <p class="indenterDisse">
-                I dette steget samler man info og dokumentasjon. Hvis det finnes
-                en eksisterende løsning, finner man info om denne og snakker med
-                brukerne av den. Målet er å finne ut hva man trenger for det nye
-                systemet.
-              </p>
-              <br />
-              <li>Design</li>
-              <p class="indenterDisse">
-                Man utvikler en prototype på design, og utvikler denne videre i
-                samarbeid slik at den oppnår kravene.
-              </p>
-              <br />
-              <li>Utvikling</li>
-              <p class="indenterDisse">
-                I dette steget utformer man produktet og utvikler det. Innenfor
-                dette steget er det egne steg, grunnet stor arbeidsmengde.
-              </p>
-              <br />
-              <li>Implementering</li>
-              <p class="indenterDisse">
-                I denne fasen utgir man produktet, og man bruker forskjellige
-                metoder for å få dette til verks. (Big bang, parallelle
-                systemer, innfasing etc.)
-              </p>
-              <br />
-              <li>Vedlikehold</li>
-              <p class="indenterDisse">
-                Denne fasen skjer etter utgivelsen av programmet, og før det
-                blir utdatert. Man vedlikeholder programvaren, gir oppdateringer
-                og legger inn forbedringer. Dette skjer helt frem til steg 7.
-              </p>
-              <br />
-              <li>Avslutning</li>
-              <p class="indenterDisse">
-                Her er produktet blitt utdatert av forskjellige grunner. Feks,
-                teknologiske utviklinger, standarder har endret seg, få brukere,
-                etc. I dette steget avslutter man bruken og støtten til
-                programmet.
-              </p>
-            </ol>
-            <aside class="aside aside--success">
-              Det er viktig å påpeke at det blir ofte brukt varianter av en
-              metode, og teorien er ofte ikke fulgt til punkt og prikke i
-              praksis. Det er nødvendig å modifisere fremgangsmåten, da man skal
-              heller tilpasse metoden til teamet og ikke vice versa.
+            <h2>SCRUM</h2>
+            <p>Alt i alt kan vi kort oppsummere SCRUM til 5 steg.</p>
+            <aside class="aside--info">
+              <ol>
+                <li><a href="#ProductBacklog">Product Backlog</a></li>
+                <li><a href="#SprintPlan">Sprint planning</a></li>
+                <li><a href="#SprintBacklog">Sprint backlog</a></li>
+                <li><a href="#DailyScrum">Daily Scrum</a></li>
+                <li><a href="#Review">Sprint review/retrospective</a></li>
+              </ol>
             </aside>
 
             <div class="article__content-image-with-text">
               <div class="article__content-image">
-                <img src="../public/sdlc.png" alt="SDCL LifeCycle" />
+                <img
+                  src="https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/2022-10/scrum_framework.png"
+                  alt="Scrum-prosessen avbildet. Steg 1-5 m/iterasjon."
+                />
               </div>
-              <a href="../pages/sources.html#"
-                >Figur 1.1: SDLC life cycle, 7 faser. Hentet fra s.42, Systems
-                Analysis and Design av Kendall og Kendall.</a
+
+              <a href="../pages/sources.html#scrumframework">
+                Figur 2 (Scrum.org, 2022): Beskriver Scrum-prosessen og viser
+                iterering.
+              </a>
+            </div>
+
+            <cite></cite>
+
+            <h3 id="ProductBacklog">Product Backlog</h3>
+            <p>
+              I prosjekter som bruker SCRUM-metoden så finnes det 3 viktige
+              parter - produkteier, scrum master, og teamet(Sutherland, 2014,
+              s.18-21). Sammen, i begynnelsen av prosjektet, går de sammen om å
+              opprette en Product Backlog. Dette er en samling av
+              spesifikasjoner og funksjoner som skal inkluderes i det endelige
+              produktet, feks. i form av user stories(Scrum - Forelesning v/Tove
+              Bøe, personlig kommunikasjon, 02. november 2022). En Product
+              Backlog er alltid mulig å endre over tid, av alle deltagere.
+              Sammen så designer man produktet, og bryter funksjonene ned i
+              enkle steg. Etter dette starter den første av flere seremonier,
+              sprint-planlegging.(Sutherland, 2014, s.24)
+            </p>
+
+            <h3 id="SprintPlan">Sprint Planning</h3>
+            <p>
+              Sprint-planleggingen er delt inn i 2 faser, den første hvor man
+              definerer hvilken prioritet de forskjellige funksjonene har (høy
+              eller lav), og man bruker tid på å forstå ønskene til
+              produkteieren. Den andre fasen er fokuset flyttet over på å
+              definere hva som må til for at en oppgave skal være “ferdig”, og
+              man arbeider fra høy prioritet til lav prioritet.(Sutherland,
+              2014, s.28) I løpet av planleggingsfasen, så forsøker man estimere
+              mengde arbeid og tidslinje for prosjektet.
+            </p>
+
+            <aside class="aside--info">
+              Oppgaver med høy prioritet er de som har essensiell funksjon.
+              Oppgaver med lav prioritet handler om funksjoner som ikke bidrar
+              direkte til hovedoppgaven til programmet.
+            </aside>
+
+            <h3 id="SprintBacklog">Sprint Backlog</h3>
+            <p>
+              Man lager også en "<i>Sprint Backlog</i>", altså en oversikt over
+              oppgavene man definerte i fase 1 og 2. Her bestemmer man hva man
+              skal gjøre i kommende sprint. En "<i>Sprint Burndown Chart</i>" er
+              en oversikt over antatt gjenværende arbeidsmengde, og kan
+              planlegges med feks. Planning Poker(Scrum - Forelesning v/Tove
+              Bøe, personlig kommunikasjon, 02. november 2022).
+            </p>
+
+            <h3 id="DailyScrum">Daily Scrum</h3>
+            <p>
+              Videre arbeider man med såkalt “<i>Daily Scrum</i>”, dvs. at man
+              arbeider men oppgavene valgt i sprint-planleggingen. Dette gjør
+              man i tidligere bestemt tid, mellom 2-4 uker. I denne perioden har
+              man daglige møter, “<i>Daily Standups</i>”. I disse møtene gir man
+              info om egen oppgave; hva man gjorde i går, hva man skal gjøre i
+              dag, og hva som kan være et hinder for fremgang(Sutherland, 2014,
+              s.33).
+            </p>
+
+            <div class="article__content-image-with-text">
+              <div class="article__content-image">
+                <img
+                  src="../public/done-doing-todo.jpg"
+                  alt="Daily Scrum, Post-It lapper som illustrerer hva man snakker om i en Daily Standup."
+                />
+              </div>
+              <a href="../pages/sources.html#constantino"
+                >Figur 3 (Constantino, 2021): "To Do, Doing og Done" -
+                hovedtemaet under en standup.</a
               >
             </div>
 
-            <br />
-
-            <h3>Agile metoder</h3>
+            <cite></cite>
+            <h3 id="Review">Sprint Review og Retrospective</h3>
             <p>
-              Agile metoder, eller lettvekts-metoder, er motsetningen til de
-              strukturerte metodene. Noen eksempler er Kanban, SCRUM, XP, og
-              Crystal. Agile metoder baserer seg på muligheten til å iterere, og
-              ha tettere kommunikasjon mellom deltakere i prosjektet. Det er
-              høye krav i agil metode, så det er høyt verdsatt å ha mye
-              motivasjon for eget arbeid. Dette settet med metoder har sitt
-              utspring fra en gruppe med utviklere, som ønsket å forbedre
-              tilnærmingen til utvikling. (KILDE) Slik som Scrum Handbook
-              forklarer, waterfall metoden har noen problemer som agile metoder
-              (i dette tilfellet, SCRUM) ønsker å rette opp i. Noen problemer de
-              nevner er større kreativ frihet, mindre fokus på dokumentasjon,
-              mer iterasjon, teknologiske forandringer, etc. (s.16, Scrum
-              Handbook)
-              <br />
-              Vi ønsker å se litt nærmere på SCRUM som eksempel for agil metode.
+              Når sprinten er ferdig holder man møte for å få total oversikt
+              over arbeidet utført, “sprint review”. Her demonstrerer teamet hva
+              som har blitt oppnådd i sprinten, og arbeidet vurderes. Man går
+              over til “<i>Sprint Retrospective</i>”, og man gir forslag til
+              forbedring og man jobber sammen om å oppdatere burndown chart og
+              product backlog. (Scrum handbook s.39-40) Etter steg 5, itererer
+              teamet over prosessen igjen og igjen til et produkt som oppfyller
+              alle kravene til produkteier. Prosjektet ansees da som ferdig.
             </p>
 
-            <h4>SCRUM</h4>
-            <p>
-              Når man bruker SCRUM, ønsker man tett samarbeid mellom de
-              forskjellige partene i utviklingsprosessen - dvs kunden og teamet.
-              Det organiseres daglige møter, også kalt stand-ups, hvor man
-              forteller kortfattet hva man har gjort, hva som gjenstår, og hva
-              man har problemer med. Man ønsker å tydeliggjøre prosessen både
-              for teamet, men også for kunden. Kunden har også mulighet til å gi
-              innspill i løpet av denne prosessen. Man arbeider i gitte
-              tidsperioder hvor man higer etter en iterasjon som er mulig å
-              utgi. Ved hver nye iterasjon blir produktet bedre, og man får
-              rettet problemer og feil underveis i prosjektet i stedet for mot
-              slutten. Disse periodene kalles "sprints", og varer mellom 2-4
-              uker. Disse sprintene gjør det også enklere å legge til/endre
-              funksjoner på farten. Man fokuserer større på produktet enn ferden
-              og dokumentasjonen.
-            </p>
-
-            <p>
-              Negative sider ved SCRUM er at det er vanskeligere å forutse
-              timelines, dvs tiden hvert prosjekt tar kan variere fra hva man
-              antar først. Det som også kan oppstå som et problem er
-              feilkommunikasjon. Hvert under-team jobber med hver sin ting, og
-              det er fort gjort å snakke forbi hverandre. Dette kan resultere i
-              at flere team utvikler dobbelt, og det forlenger tidslinjen og kan
-              ødelegge fremgangen i en sprint.
-            </p>
-
-            <p>
-              I en SCRUM-prosess så finnes det 3 viktige parter - produkteier,
-              scrum master, og teamet. I begynnelsen av prosjektet går de sammen
-              om å opprette en product backlog. Dette er en samling av
-              spesifikasjoner og funksjoner som skal inkluderes i det endelige
-              produktet. Det er verdt å nevne at pga fokuset på iterasjon som
-              nevnt tidligere, så er ikke denne listen en endelig liste, men
-              “subject to change” over lengden av prosjektet. Sammen så designer
-              man produktet, og bryter funksjonene ned i enkle steg. Når man har
-              gjort dette, går man over til å planlegge sprints. “The product
-              backlog” listen over kravene til produktet, rangert etter
-              viktighetsgrad. utvikler seg med prosjektet, og man kan
-              kontinuerlig legge til og fjerne innhold i lista. “the sprint” 1-4
-              ukers iterasjoner. Fixed duration, når de er ferdig blir de ikke
-              utvidet om ting går galt. Viktige parter: Product Owner, Scrum
-              Master, Team. Man velger en “scrum master”. Denne personen legger
-              til rette for at teamet kan jobbe uforstyrret. De har
-              organisatoriske roller, og planlegger møter, etc.
-              Planleggingsfasen for hver sprint skjer i starten av sprinten.
-              Bare de viktige partene kan delta, og man diskuterer og planlegger
-              hver sprint ifht. kravene nevnt i product backlog, hvor man først
-              designer løsningen, og deretter bryter ned disse kravene til enkle
-              steg. <strong>ER DENNE RIKTIG?</strong>
-            </p> -->
-            <h2>Agile Metoder</h2>
-                    
-                    <p>
-                        Agile metoder, eller lettvekts-metoder, er på noen måter 
-                        motsetningen til de strukturerte metodene. Noen eksempler 
-                        er Kanban, SCRUM, XP, og Crystal. Agile kan bli oppsummert 
-                        i 5 kategorier - verktøy, praksis, metoder, prinsipper og 
-                        verdier(Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig kommunikasjon, 24. oktober 2022).
-                        Verdiene kommer fra Agile Manifesto laget av en gruppe utviklere 
-                        som ønsket å 
-                        definere et sett med verdier for effektiv og verdifull 
-                        utvikling av kode(Agile Manifesto, 2001). Manifestoet er 
-                        utgangspunktet for prinsippene, metoder og praksis.
-                    </p>
-
-                    <aside class="aside aside--success"> <b>Individuals and interactions</b> over processes and tools <br>
-                        <b>Working software</b> over comprehensive documentation <br>
-                        <b>Customer collaboration</b> over contract negotiation <br>
-                        <b>Responding to change</b> over following a plan <br>
-                        (Agile Manifesto, 2001)
-                    </aside>
-                    </p>
-
-                    <p>
-                        Vi ønsker å se litt nærmere på SCRUM som eksempel for agil metode. 
-                    </p>
-
-                    <h3>SCRUM</h3>
-                    <p>
-                        Alt i alt kan vi kort oppsummere SCRUM til 5 steg.
-                        <aside class="aside aside--info">
-                        <ol>
-                         <a href="#ProductBacklog"><li>Product Backlog</li></a>
-                         <a href="#SprintPlan"><li>Sprint planning</li></a>
-                         <a href="#SprintBacklog"><li>Sprint backlog</li></a>
-                         <a href="#DailyScrum"><li>Daily Scrum</li></a>
-                         <a href="#Review"><li>Sprint review/retrospective</li></a>
-                        </ol>
-                        </aside>
-                        <img src="https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/2022-10/scrum_framework.png" alt="Scrum-prosessen avbildet. Steg 1-5 m/iterasjon.">
-                        <cite>Figur 2 (Scrum.org, 2022): Beskriver Scrum-prosessen og viser iterering.</cite>
-
-                     </p>
-                    <div>
-                        <p id="ProductBacklog">
-                            <h4>Product Backlog</h4>
-                            I prosjekter som bruker SCRUM-metoden så finnes det 3 
-                            viktige parter - produkteier, scrum master, og teamet(Sutherland, 2014, s.18-21).
-                             Sammen, i begynnelsen av prosjektet, går de sammen om å 
-                             opprette en Product Backlog. Dette er en samling av 
-                             spesifikasjoner og funksjoner som skal inkluderes i det 
-                             endelige produktet, feks. i form av user stories(Scrum - Forelesning v/Tove Bøe, personlig kommunikasjon, 02. november 2022). 
-                             En Product Backlog er alltid mulig å endre over tid, av alle 
-                             deltagere. Sammen så designer man produktet, og bryter 
-                             funksjonene ned i enkle steg. Etter dette starter den første 
-                             av flere seremonier, sprint-planlegging.(Sutherland, 2014, s.24)
-                        </p>
-                        <br>
-                        <p id="SprintPlan">
-                            <h4>Sprint Planning</h4>
-                            Sprint-planleggingen er delt inn i 2 faser, den 
-                            første hvor man definerer hvilken prioritet de forskjellige 
-                            funksjonene har (høy eller lav), og man bruker tid på å 
-                            forstå ønskene til produkteieren. Den andre fasen er 
-                            fokuset flyttet over på å definere hva som må til for at en 
-                            oppgave skal være “ferdig”, og man arbeider fra høy 
-                            prioritet til lav prioritet.(Sutherland, 2014, s.28) I 
-                            løpet av planleggingsfasen, så forsøker man estimere mengde 
-                            arbeid og tidslinje for prosjektet.
-                        </p>
-                        <br>
-                        <aside id="infoBox" class="aside aside--info">Oppgaver med høy prioritet er de som har essensiell funksjon. Oppgaver med lav prioritet handler om funksjoner som ikke bidrar direkte til hovedoppgaven til programmet.</aside>
-                        <br>
-                        <p id="SprintBacklog">
-                            <h4>Sprint Backlog</h4>
-                            Man lager også en "<i>Sprint Backlog</i>", altså en 
-                            oversikt over oppgavene man definerte i fase 1 og 2. Her bestemmer man hva man skal 
-                            gjøre i kommende sprint.
-                            En "<i>Sprint Burndown Chart</i>" er en oversikt over 
-                            antatt gjenværende arbeidsmengde, og kan planlegges med 
-                            feks. Planning Poker(Scrum - Forelesning v/Tove Bøe, personlig 
-                            kommunikasjon, 02. november 2022).
-                        </p>
-                        <br>
-                        <p id="DailyScrum">
-                            <h4>Daily Scrum</h4>
-                            Videre arbeider man med såkalt “<i>Daily Scrum</i>”, dvs. 
-                            at man arbeider men oppgavene valgt i sprint-planleggingen. 
-                            Dette gjør man i tidligere bestemt tid, mellom 2-4 uker. 
-                            I denne perioden har man daglige møter, 
-                            “<i>Daily Standups</i>”. I disse møtene gir man info om 
-                            egen oppgave; hva man gjorde i går, hva man skal gjøre i 
-                            dag, og hva som kan være et hinder for 
-                            fremgang(Sutherland, 2014, s.33).
-                        </p>
-                        <img id="DailyScrumIMG" src="../public/done-doing-todo.jpg" alt="Daily Scrum, Post-It lapper som illustrerer hva man snakker om i en Daily Standup.">
-                        <cite>Figur 2 (Constantino, 2021): "To Do, Doing og Done" - hovedtemaet under en standup.</cite>
-                        <p id="Review">
-                            <br>
-                            <h4>Sprint Review og Retrospective</h4>
-                            Når sprinten er ferdig holder man møte for å få total 
-                            oversikt over arbeidet utført, “sprint review”. 
-                            Her demonstrerer teamet hva som har blitt oppnådd i 
-                            sprinten, og arbeidet vurderes. Man går over til 
-                             “<i>Sprint Retrospective</i>”, og man gir forslag til forbedring 
-                            og man jobber sammen om å oppdatere burndown chart og 
-                            product backlog. (Scrum handbook s.39-40) 
-                            <br>
-                            Etter steg 5, itererer teamet over prosessen igjen 
-                            og igjen til et produkt som oppfyller alle kravene til 
-                            produkteier. Prosjektet ansees da som ferdig.
-                        </p>
             <div class="article__pagination">
               <a
                 class="article__pagination-button button button--pink button--no-padding"
                 href="../pages/strukturerte-metoder.html"
               >
-                <img src="../public/pil-venstre.svg" alt="" />
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
                 <p>Forrige side</p>
               </a>
               <a
@@ -418,25 +289,43 @@
                 href="../pages/webutvikling.html"
               >
                 <p>Neste side</p>
-                <img src="../public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
               </a>
             </div>
           </div>
         </article>
-      </div>
+      </section>
     </main>
 
-    Kilder: https://unsplash.com/photos/gAe1pHGc6ms for elefantbilde
     <!-- footer -->
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

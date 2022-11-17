@@ -2,6 +2,11 @@
 <html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Webutvikling fase 2: utforske og designe"
+    />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Utforske og designe</title>
@@ -10,6 +15,11 @@
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <!-- header -->
     <header class="body__header">
       <div class="header__container header__container--wide">
@@ -66,7 +76,7 @@
 
     <!-- main -->
     <main class="body__main body-background-secondary">
-      <div class="article-wrapper">
+      <section class="article-wrapper">
         <nav class="article__nav-container">
           <div class="article__nav">
             <ul>
@@ -124,18 +134,17 @@
             </ul>
           </div>
         </nav>
-        <article class="article">
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
+              src="../public/designing.avif"
+              alt="Bildet viser en tavle med wireframes av potensielle design"
             />
           </div>
           <div class="article__content">
             <!-- title -->
 
-            <h1>Webutvikling Fase 2</h1>
-            <h2>Utforske og designe</h2>
+            <h1>Fase 2: Designe og utforske</h1>
 
             <p>
               Design og utforskning kommer i den andre fasen av Webutvikling. I
@@ -257,7 +266,10 @@
                 class="article__pagination-button button button--pink button--no-padding"
                 href="../pages/fase-1.html"
               >
-                <img src="../public/pil-venstre.svg" alt="" />
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
                 <p>Forrige side</p>
               </a>
               <a
@@ -265,24 +277,43 @@
                 href="../pages/html-og-css.html"
               >
                 <p>Neste side</p>
-                <img src="../public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
               </a>
             </div>
           </div>
         </article>
-      </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

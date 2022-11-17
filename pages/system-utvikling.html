@@ -2,14 +2,20 @@
 <html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Introduksjon til systemutvikling" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Systemutvikling</title>
-
     <link rel="stylesheet" href="../style.css" />
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <!-- header -->
     <header class="body__header">
       <div class="header__container header__container--wide">
@@ -124,15 +130,73 @@
             </ul>
           </div>
         </nav>
-        <article class="article">
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
+              src="../public/scrum-image.avif"
+              alt="Et bilde som viser en dame peke på en tavle"
             />
           </div>
           <div class="article__content">
             <h1>Introduksjon til systemutvikling</h1>
+
+            <p>
+              <i>
+                "System er en ordnet sammenstilling av deler til et hele; eller
+                planmessig fremgangsmåte. Begrepet brukes også om et sett eller
+                gruppe av gjenstander eller deler som hører sammen eller er ment
+                å virke sammen etter en bestemt plan"
+              </i>
+              <a href="../pages/sources.html#nilstun">(Nilstun, 2021)</a>.
+            </p>
+
+            <p>
+              Et informasjonssystem er et system som har som formål å enten
+              skape eller presentere informasjon. Oppgavene til et
+              informasjonssystem er å samle inn, lagre, behandle, overføre og
+              presentere informasjon (Tove Bøe, personlig
+              kommunikasjon/forelesning, 24. august 2022). Informasjonssystemer
+              består av fem grunnleggende komponenter, hardware som er de
+              fysiske delene, software som programmene som kjører på hardwaren,
+              data som er konkrete deler med informasjon, menneskene som
+              samhandler med disse forskjellige delene og prosedyrene som
+              handler om hvordan menneskene skal samhandle med de andre
+              komponentene
+              <a href="../pages/sources.html#kolade">(Kolade, 2022)</a>.
+              Eksempler på informasjonssystemer kan være alt fra Twitter til
+              online bookingtjeneste ved en restaurant til Visma Business NXT.
+            </p>
+
+            <p>
+              Informasjonssystemer kommer hovedsakelig i to former, Software as
+              a Service (SaaS) og Commercial off the Shelf Software (COTS)
+              <a href="../pages/sources.html#fekete"> (Fekete, 2022)</a>. Begge
+              formene tilbyr brukeren en form for tjeneste, men skiller hvordan
+              tjenesten er levert til brukeren. COTS er ofte programvare du
+              installerer på egen maskin, mens SaaS er ofte tilgjengelig i en
+              skyløsning. Et eksempel på COTS er microsoft word der du kjøper en
+              lisens og installerer programmet på ditt eget hardware. Et
+              eksempel på SaaS er Google Docs som tilbyr veldig lik
+              funksjonalitet som Microsoft word, men programvaren ligger på
+              nettet. (Tove Bøe, personlig kommunikasjon/forelesning, 14.
+              september 2022).
+            </p>
+
+            <p>
+              Fordeler med COTS er at du har større kontroll på egen data og
+              ofte en lavere inngangspris. Et annet punkt som både er en fordel
+              og ulempe er at COTS ofte har mer rom brukertilpasning. Dette
+              betyr at du kan justere programmet til å løse din bedrifts
+              problem, men bakteppe med dette er at programmet er mer komplekst
+              og krever mer av deg som bruker å sette deg inn i. Fordeler med
+              SaaS er at du kan overlate vedlikehold og programmet til andre, så
+              du får mer tid til å gjøre din egen jobb. I tillegg så ligger SaaS
+              i skyen, dette gjør at du behøver mindre hardware. Ulempen med at
+              SaaS ligger i skyen er at dine data også er lagret i skyen. Du må
+              dermed stole på at eieren av SaaS programvaren ivaretar dine data.
+              (Tove Bøe, personlig kommunikasjon/forelesning, 14. september
+              2022).
+            </p>
 
             <p>
               Systemutvikling er metodisk og målrettet arbeid med å lage nye
@@ -147,19 +211,23 @@
             </p>
 
             <p>
-              Definisjonen på systemutvikling er at det er en hel prosess og et
-              rammeverk for hvordan vi kan planlegge, analysere, designe,
-              implementere og velikeholde et system. Systemutvikling og selve
-              prosessen er en strategi for å dele hele prosessen inn i flere
-              trinn.
-              <strong>KILDE?</strong>
+              Systemutvikling er en prosess som handler om å planlegge,
+              analysere, designe, implementere og velikeholde et system. I
+              systemutvikling finnes det metoder for å dele utviklingen av et
+              system i flere trinn. Dette hjelper utvikliere med å være mer
+              strukturerte, effektive og gir mer korrekt tidsrammer.
+              <a href="../pages/sources.html#dingsoyr">(Dingsøyr, 2022)</a>
             </p>
+
             <div class="article__pagination">
               <a
                 class="article__pagination-button button button--pink button--no-padding"
                 href="../pages/prosjektledelse-og-prosjektarbeid.html"
               >
-                <img src="../public/pil-venstre.svg" alt="" />
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
                 <p>Forrige side</p>
               </a>
               <a
@@ -167,7 +235,7 @@
                 href="../pages/strukturerte-metoder.html"
               >
                 <p>Neste side</p>
-                <img src="../public/pil-hoyre.svg" alt="" />
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
               </a>
             </div>
           </div>
@@ -177,14 +245,33 @@
 
     <!-- footer -->
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

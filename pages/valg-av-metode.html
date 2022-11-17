@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Valg av metode" />
+    <meta name="author" content="IT og ledelse, Gruppe 2" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metoder</title>
+    <title>Valg av metode</title>
     <link rel="stylesheet" href="../style.css" />
     <script defer src="../main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
     <header class="body__header">
-      <div class="header__container">
+      <div class="header__container header__container--wide">
         <h3 class="logo">
           <a href="../"> Gruppe 2 </a>
         </h3>
@@ -60,7 +67,7 @@
     </header>
 
     <main class="body__main body-background-secondary">
-      <div class="article-wrapper">
+      <section class="article-wrapper">
         <nav class="article__nav-container">
           <div class="article__nav">
             <ul>
@@ -118,7 +125,8 @@
             </ul>
           </div>
         </nav>
-        <article class="article">
+
+        <article id="main" class="article">
           <div class="article__image-header">
             <img
               src="../public/headerimg.jpg"
@@ -144,80 +152,118 @@
 
             <h2>Agile/Scrum pros & cons</h2>
 
-            <table class="AgileTable">
-              <thead>
-                <tr>
-                  <th>Pros</th>
-                  <th>Cons</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <b>+</b> Hurtig utvikling, kort vei til første utkast*
-                  </td>
-                  <td>
-                    <b>-</b> Ved dårlig kommunikasjon, kan det forlenge
-                    tidsramme**
-                  </td>
-                </tr>
-                <tr>
-                  <td><b>+</b> Selvstendig og selv-organisert arbeid*</td>
-                  <td><b>-</b> Vanskelig å beregne nøyaktig tidsramme*</td>
-                </tr>
-                <tr>
-                  <td>
-                    <b>+</b> Enkelt å forandre "on the fly" pga. itereringsevne,
-                    tett kontakt med kunde**
-                  </td>
-                  <td><b>-</b> Fare for å ha overlappende arbeid**</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pros</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>+</b> Hurtig utvikling, kort vei til første utkast*
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>+</b> Selvstendig og selv-organisert arbeid*</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>+</b> Enkelt å forandre "on the fly" pga.
+                      itereringsevne, tett kontakt med kunde**
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Cons</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>-</b> Ved dårlig kommunikasjon, kan det forlenge
+                      tidsramme**
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>-</b> Vanskelig å beregne nøyaktig tidsramme*</td>
+                  </tr>
+                  <tr>
+                    <td><b>-</b> Fare for å ha overlappende arbeid**</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <h2>Strukturert/Fossefall pros & cons</h2>
 
-            <table class="WaterfallTable">
-              <thead>
-                <tr>
-                  <th>Pros</th>
-                  <th>Cons</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><b>+</b> Prosjekter med høy nøyaktighet drar nytte*</td>
-                  <td><b>-</b> Større mengde dokumentasjon påkrevet*</td>
-                </tr>
-                <tr>
-                  <td>
-                    <b>+</b> Konkret plan over prosjektet fra start til slutt**
-                  </td>
-                  <td>
-                    <b>-</b> Liten fleksibilitet om standarder/teknologi skulle
-                    endres*
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <b>+</b> Mer strukturert arbeidsflyt, da alle stegene må
-                    kompletteres før man går videre**
-                  </td>
-                  <td>
-                    <b>-</b> Kan få eureka-opplevelser sent i prosjekt - da må
-                    ny fase for feks. utvikling planlegges***
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-container">
+              <table class="">
+                <thead>
+                  <tr>
+                    <th>Pros</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>+</b> Prosjekter med høy nøyaktighet drar nytte*</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>+</b> Konkret plan over prosjektet fra start til
+                      slutt**
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>+</b> Mer strukturert arbeidsflyt, da alle stegene må
+                      kompletteres før man går videre**
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="">
+                <thead>
+                  <tr>
+                    <th>Cons</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>-</b> Større mengde dokumentasjon påkrevet*</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>-</b> Liten fleksibilitet om standarder/teknologi
+                      skulle endres*
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>-</b> Kan få eureka-opplevelser sent i prosjekt - da må
+                      ny fase for feks. utvikling planlegges***
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <div style="display: flex; flex-direction: column">
-              <cite
-                >*(Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig
-                kommunikasjon, 24. oktober 2022)</cite
+              <p>
+                *(Systemutviklingsmetoder - Forelesning v/Tove Bøe, personlig
+                kommunikasjon, 24. oktober 2022)
+              </p>
+              <a href="../pages/sources.html#hoory"
+                >**(Hoory & Bottorf, 2022)</a
               >
-              <cite>**(Hoory & Bottorf, 2022)</cite>
-              <cite>***(Sutherland, 2014, s.15-17)</cite>
+              <a href="../pages/sources.html#sutherland"
+                >***(Sutherland, 2014, s.15-17)</a
+              >
             </div>
 
             <h3>Oppsummering SCRUM</h3>
@@ -262,12 +308,14 @@
               nøye dokumentasjon.
             </p>
 
-            <img
-              id="ProsCons"
-              src="../public/pros_cons.png"
-              alt="Pluss og minus"
-            />
-            <cite>(Figur 5, 2022, VanReeel)</cite>
+            <div class="article__content-image-with-text">
+              <div class="article__content-image">
+                <img id="" src="../public/pros_cons.png" alt="Pluss og minus" />
+              </div>
+              <a href="../pages/sources.html#vanreeel"
+                >(Figur 2, 2022, VanReeel)</a
+              >
+            </div>
 
             <h3>Så hva skal man velge?</h3>
 
@@ -280,19 +328,57 @@
               og ikke lett foranderlig, slik som i byggebransjen, kan det være
               gunstig å bruke Fossefallmetoden.
             </p>
+            <div class="article__pagination">
+              <a
+                class="article__pagination-button button button--pink button--no-padding"
+                href="../pages/agile-metoder.html"
+              >
+                <img
+                  src="../public/pil-venstre.svg"
+                  alt="Pil peker til venstre"
+                />
+                <p>Forrige side</p>
+              </a>
+              <a
+                class="article__pagination-button button button--pink button--no-padding"
+                href="../pages/webutvikling.html"
+              >
+                <p>Neste side</p>
+                <img src="../public/pil-hoyre.svg" alt="Pil peker til høyre" />
+              </a>
+            </div>
           </div>
         </article>
-      </div>
+      </section>
     </main>
     <footer class="body__footer">
-      <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="../public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+      <div class="footer__container footer__container--wide">
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="../public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="../public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="../public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

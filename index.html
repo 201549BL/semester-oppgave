@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Web og systemutvikling" />
     <meta name="author" content="IT og ledelse, Gruppe 2" />
-    <meta name="keywords" content="html, css, javascript, web, system" />
+    <meta
+      name="keywords"
+      content="html, css, javascript, web, system, utvikling"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web og systemutvikling</title>
-
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./main.js"></script>
   </head>
   <body class="body">
+    <div class="accessibility-link__container">
+      <a href="#main" class="accessibility-link__content">
+        Gå til hovedinnhold
+      </a>
+    </div>
+
     <!-- header -->
     <header class="body__header">
       <div class="header__container">
@@ -135,9 +143,7 @@
                       Vil du lære mer om web og system utvikling?
                     </h1>
 
-                    <a href="#articles" class="button button--pink"
-                      >Klikk her</a
-                    >
+                    <a href="#main" class="button button--pink">Klikk her</a>
                   </div>
                 </div>
               </div>
@@ -147,19 +153,20 @@
       </div>
 
       <!-- cards  -->
-      <section class="main__container" id="articles">
+      <section class="main__container" id="main">
         <!-- card  -->
         <article class="card card--open">
           <div class="card__image">
             <img
-              src="https://images.pexels.com/photos/2097/desk-office-pen-ruler.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="sdfsdf"
+              src="./public/teamwork.avif"
+              alt="Et bilde som viser mennesker i et møte"
             />
           </div>
           <div class="card__content">
-            <div class="title-group">
-              <h2 class="title">Prosjektledelse og prosjektarbeid</h2>
-            </div>
+            <h2 class="card__content-title title">
+              Prosjektledelse og prosjektarbeid
+            </h2>
+
             <a
               class="button button--pink"
               href="./pages/prosjektledelse-og-prosjektarbeid.html"
@@ -173,19 +180,15 @@
         <article class="card">
           <div class="card__image">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="sdfsdf"
+              src="./public/scrum-image.avif"
+              alt="Et bilde som viser en dame peke på en tavle"
             />
           </div>
           <div class="card__content">
-            <div class="title-group">
-              <h2 class="title">Systemutvikling</h2>
-            </div>
-            <!-- <button class="button button--pink"> -->
+            <h2 class="card__content-title title">Systemutvikling</h2>
             <a class="button button--pink" href="./pages/system-utvikling.html">
               Les mer
             </a>
-            <!-- </button> -->
           </div>
         </article>
 
@@ -193,14 +196,12 @@
         <article class="card">
           <div class="card__image">
             <img
-              src="https://images.pexels.com/photos/2097/desk-office-pen-ruler.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="sdfsdf"
+              src="./public/wireframe.avif"
+              alt="Et bilde som viser en person tegne wireframes"
             />
           </div>
           <div class="card__content">
-            <div class="title-group">
-              <h2 class="title">Web utvikling</h2>
-            </div>
+            <h2 class="card__content-title title">Web utvikling</h2>
             <a class="button button--pink" href="./pages/webutvikling.html">
               Les mer
             </a>
@@ -212,13 +213,32 @@
     <!-- footer -->
     <footer class="body__footer">
       <div class="footer__container">
-        <a
-          class="text-with-icon"
-          href="https://github.com/201549BL/semester-oppgave"
-        >
-          <p>Github</p>
-          <img src="./public/github-seeklogo.com.svg" alt="Github icon" />
-        </a>
+        <div class="link-row">
+          <a
+            class="text-with-icon"
+            href="https://github.com/201549BL/semester-oppgave"
+            target="_blank"
+          >
+            <p>Github</p>
+            <img src="./public/github-seeklogo.com.svg" alt="Github ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://web01.usn.no/~252547/wes120v/semester-oppgave/"
+            target="_blank"
+          >
+            <p>Web01</p>
+            <img src="./public/web-server-icon.svg" alt="Web-server ikon" />
+          </a>
+          <a
+            class="text-with-icon"
+            href="https://sweet-melba-39fb82.netlify.app/"
+            target="_blank"
+          >
+            <p>Netlify</p>
+            <img src="./public/netlify-icon.svg" alt="Netlify ikon" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

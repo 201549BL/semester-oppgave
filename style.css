@@ -67,46 +67,6 @@ ul {
 .indenterDisse {
   padding-left: 2rem;
 }
-
-#DailyScrumIMG {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-#infoBox {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35rem;
-}
-
-.AgileTable {
-  border-style: solid;
-  border-color: #f85b5b;
-  border-width: 0.5em;
-  border-radius: 30px;
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.WaterfallTable {
-  border-style: solid;
-  border-color: #007dbc;
-  border-width: 0.5em;
-  border-radius: 30px;
-  padding: 2rem 1rem 1rem 1rem;
-}
-
-#ProsCons {
-  width: 25rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* --------------------------- */
 
 @media (max-width: 500px) {
@@ -137,6 +97,26 @@ svg {
 
 .no-animations .nav {
   transition-duration: 0s;
+}
+
+.accessibility-link__container {
+  background-color: white;
+  height: auto;
+}
+.accessibility-link__content {
+  display: block;
+  height: 0;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.accessibility-link__content:focus {
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.accessibility-link:focus-within {
 }
 
 .body {
@@ -308,7 +288,7 @@ svg {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
@@ -391,26 +371,22 @@ svg {
   display: flex;
   flex-direction: column;
 
-  justify-content: space-between;
+  justify-content: center;
 
   gap: 1rem;
 }
 
+.card__content-title {
+  width: 100%;
+  text-align: center;
+}
+
 .title {
   font-size: var(--text-big);
-  /* font-style: italic; */
-  /* font-weight: 700; */
-  width: fit-content;
-  display: inline;
+
   line-height: 1.5;
 
-  /* word-break: break-all; */
   word-wrap: break-word;
-  /* hyphens: auto; */
-
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
-
-  /* background-color: var(--color-blue); */
 }
 
 @media (max-width: 650px) {
@@ -818,6 +794,16 @@ svg {
   padding: 0 var(--padding);
 }
 
+.footer__container--wide {
+  --max-width: 1440px;
+  max-width: var(--max-width);
+}
+
+.link-row {
+  display: flex;
+  gap: 1rem;
+}
+
 .text-with-icon {
   width: fit-content;
 
@@ -1028,6 +1014,7 @@ h6 {
 }
 
 .article li {
+  font-size: 1.1rem;
   margin-left: 1rem;
 }
 
@@ -1042,6 +1029,7 @@ h6 {
 .article__content-image-with-text a {
   align-self: flex-end;
   text-align: end;
+  cursor: pointer;
 }
 
 .article__content-image {
@@ -1050,11 +1038,11 @@ h6 {
   width: 100%;
   overflow: hidden;
   border-radius: var(--border-radius);
-  /* border: var(--border-width) solid black; */
 
-  box-shadow: 0px 0px 0px var(--border-width) rgba(0, 0, 0);
-  -webkit-box-shadow: 0px 0px 0px var(--border-width) rgba(0, 0, 0);
-  -moz-box-shadow: 0px 0px 0px var(--border-width) rgba(0, 0, 0);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0);
+  border-radius: var(--border-radius);
 }
 
 .article__content-image img {
@@ -1088,6 +1076,16 @@ h6 {
   height: 2rem;
 }
 
+.article .table-container {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .article .table-container {
+    flex-direction: column;
+  }
+}
+
 aside {
   padding: 1rem;
   background-color: var(--color-info);
@@ -1096,6 +1094,15 @@ aside {
   border-style: solid;
 
   border-radius: var(--border-radius);
+}
+
+aside a {
+  --color-link: #00557f;
+}
+
+aside p,
+aside a {
+  font-size: 1rem;
 }
 
 .aside--danger {
@@ -1161,7 +1168,6 @@ aside {
 
 .about__person {
   margin: 0 1rem;
-  /* border: var(--border-width) solid black; */
   border-radius: var(--border-radius);
 
   box-shadow: 0px 0px 0px var(--border-width) rgba(0, 0, 0);
@@ -1170,6 +1176,9 @@ aside {
 
   flex: 1 1 250px;
   max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
 
   transition: all 0.3s ease;
 
@@ -1225,6 +1234,11 @@ aside {
   border-top: var(--border-width) solid black;
 
   background-color: var(--color-background);
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
 }
 
 .color-overlay {
