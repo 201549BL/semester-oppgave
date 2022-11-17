@@ -65,3 +65,22 @@ navLinks.forEach((link) => {
     link.closest("details").setAttribute("open", "true");
   }
 });
+
+// button to turn off css
+const cssToggle = document.querySelector("#css-toggle");
+const styleSheet = document.querySelector("link[rel=stylesheet]");
+const styleHref = styleSheet.getAttribute("href");
+
+console.log("🚀 ~ file: main.js ~ line 74 ~ styleHref", styleHref);
+
+if (cssToggle) {
+  cssToggle.addEventListener("click", () => {
+    if (styleSheet.getAttribute("href")) {
+      cssToggle.innerHTML = "Skru på CSS";
+      return styleSheet.setAttribute("href", "");
+    }
+
+    cssToggle.innerHTML = "Skru av CSS";
+    styleSheet.setAttribute("href", styleHref);
+  });
+}
