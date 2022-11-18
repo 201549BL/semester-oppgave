@@ -71,8 +71,6 @@ const cssToggle = document.querySelector("#css-toggle");
 const styleSheet = document.querySelector("link[rel=stylesheet]");
 const styleHref = styleSheet.getAttribute("href");
 
-console.log("🚀 ~ file: main.js ~ line 74 ~ styleHref", styleHref);
-
 if (cssToggle) {
   cssToggle.addEventListener("click", () => {
     if (styleSheet.getAttribute("href")) {
