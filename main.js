@@ -52,6 +52,14 @@ setTimeout(() => {
   resizeCta();
 }, 1000);
 
+setTimeout(() => {
+  resizeCta();
+}, 500);
+
+setTimeout(() => {
+  resizeCta();
+}, 100);
+
 resizeCta();
 
 // Set active css styling on current page in sidebar navigation
