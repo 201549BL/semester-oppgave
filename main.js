@@ -48,8 +48,9 @@ const resizeCta = () => {
 
 window.addEventListener("resize", resizeCta);
 
-resizeCta();
-
+setTimeout(() => {
+  resizeCta();
+}, 1000);
 // Set active css styling on current page in sidebar navigation
 const urlObject = new URL(window.location.href);
 
