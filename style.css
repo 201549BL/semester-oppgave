@@ -1225,8 +1225,6 @@ aside a {
   object-fit: cover;
   object-position: center;
 
-  /* filter: grayscale(1); */
-
   transition: all 0.3s ease;
 }
 
